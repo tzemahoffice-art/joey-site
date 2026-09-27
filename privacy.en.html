@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacy Policy · Joey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="./">Joey</a>
+  <nav>
+    <a href="./">Home</a>
+    <a href="privacy.he.html">עברית</a>
+  </nav>
+</header>
+
+<main>
+  <div class="draft" role="note">
+    <strong>Draft — not yet reviewed by a lawyer</strong>
+    <p>This document is based on what the app actually does, but it has <strong>not been reviewed by a lawyer and is not binding</strong>. Any text shown <code class="todo">[in square brackets]</code> is a legal or business decision that has not been made yet.</p>
+  </div>
+
+  <article>
+<h1>Joey — Privacy Policy (English)</h1>
+<blockquote><p><strong>Draft prepared 30/08/2026 for legal review. Not a final, legally-binding document.</strong> Every <code class="todo">[BRACKETED]</code> item is a legal or business decision that has <strong>not</strong> been made yet and must be filled in by a lawyer or by Joey's ownership before this is published anywhere — nothing here should be treated as final. A complete list of every open item is repeated at the end of this document, in one place, for convenience. This draft is grounded in what the Joey Rider and Joey Driver apps actually do today, verified against the codebase — not a generic template. Facts that are genuinely uncertain (not business decisions, just unverified facts) are marked <code class="todo">[VERIFY]</code>.</p></blockquote>
+<p><strong>Effective date:</strong> <code class="todo">[EFFECTIVE DATE]</code> <strong>Last updated:</strong> 12/09/2026 (draft)</p>
+<hr>
+<h2>1. Who we are</h2>
+<p>This Privacy Policy covers both Joey mobile applications — <strong>Joey Rider</strong> and <strong>Joey Driver</strong> (together, &quot;Joey,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;). One policy covers both apps; sections that apply to only one app say so explicitly.</p>
+<p>Joey is operated by:</p>
+<p><strong><code class="todo">[LEGAL ENTITY NAME]</code></strong> <code class="todo">[BUSINESS ADDRESS]</code> <code class="todo">[BUSINESS REGISTRATION NUMBER — ח.פ. / עוסק מורשה]</code></p>
+<p>Contact for privacy questions: <strong>support@joey-go.com</strong> <code class="todo">[the joey-go.com domain was registered on 12/09/2026, but this mailbox has NOT been set up yet — mail sent to it will not arrive. Set it up before publishing this policy anywhere, or no one can actually exercise the rights described in §9.]</code></p>
+<h2>2. Information we collect</h2>
+<h3>2.1 Information every account provides</h3>
+<ul>
+<li><p>Full name</p></li>
+<li><p>Phone number (used to sign in — Joey uses phone number + one-time SMS code, not a password)</p></li>
+<li><p>Email address (optional)</p></li>
+<li><p>Preferred language</p></li>
+<li><p>Country</p></li>
+<li><p>Profile photo, if you add one (Joey Rider does not currently have a working photo-upload feature; this may change in a future update)</p></li>
+</ul>
+<h3>2.2 If you're a rider</h3>
+<ul>
+<li><p>Pickup and drop-off addresses and precise GPS coordinates for each ride you request</p></li>
+<li><p>Your ride history: service type (ride or delivery), vehicle type requested, status, prices, and timestamps</p></li>
+<li><p>Chat messages you exchange with your driver — only visible while a ride is in the <code>accepted</code>/<code>arriving</code>/<code>in_progress</code> stages; not accessible before or after</p></li>
+<li><p>Ratings you give to drivers and receive from them</p></li>
+<li><p>Emergency contacts you choose to add (name and phone number), if you use that feature</p></li>
+<li><p>Your location and timestamp if you use the in-app SOS button</p></li>
+<li><p>A device push-notification token, so we can send you ride-status notifications</p></li>
+<li><p>A promo code, if you enter one</p></li>
+</ul>
+<h3>2.3 If you're a driver</h3>
+<p>Everything in 2.1 and 2.2 that applies to a driver role, plus:</p>
+<ul>
+<li><p>Vehicle information: type, plate number, model</p></li>
+<li><p>Identity and vehicle documents you upload during onboarding (ID card, driving license, vehicle photo) — stored in a private file storage bucket, never publicly accessible; only accessed through short-lived, individually-generated links</p></li>
+<li><p>Your live location while you are online in the app or on an active ride (see §3, &quot;Location,&quot; below for exactly how this works today)</p></li>
+<li><p>Your wallet balance (accumulated earnings)</p></li>
+<li><p>Your driving/service rating</p></li>
+</ul>
+<h3>2.4 Payment information — what we do <strong>not</strong> store</h3>
+<p>When you add a payment card, card entry happens on <strong>PayPlus's own secure payment page</strong> — not inside the Joey app, and not on Joey's servers. <strong>Joey never receives, sees, or stores your full card number, expiry date, or CVV.</strong> What we do store, after PayPlus confirms your card is added, is:</p>
+<ul>
+<li><p>The last 4 digits of your card and the card brand (e.g., &quot;Visa •••• 1234&quot;), so you can recognize which card is saved</p></li>
+<li><p>PayPlus's own reference tokens for that card, which we use to ask PayPlus to charge you — these tokens are meaningless outside PayPlus's own system</p></li>
+</ul>
+<h3>2.5 Information we generate automatically</h3>
+<ul>
+<li><p>Ride/trip records, prices, and transaction records (see §7, &quot;Payments,&quot; for how pricing works)</p></li>
+<li><p>Records of driver-approval decisions and the reasons for them</p></li>
+<li><p>Basic app usage/error logs</p></li>
+</ul>
+<h2>3. Location — how it actually works today</h2>
+<p><strong>Riders:</strong> your location is used to set your pickup point and to show your driver's live location while a ride is in progress. It is not tracked when you're not actively planning or on a ride.</p>
+<p><strong>Drivers:</strong> while you are online (available for ride requests) or on an active ride, the app records your current GPS location so we can match you with nearby ride requests and so a rider on an active ride can see your live position. This location is stored as a <strong>current-state value only</strong> — the database keeps only your most recent location, not a historical trail of everywhere you've been. Riders can only see a driver's location during a ride they are actually matched to.</p>
+<p><strong>Location tracking today only happens while the app is open and in the foreground.</strong> Joey does not currently track location while the driver app is closed or backgrounded. <strong><code class="todo">[If/when background location tracking is added — see BACKGROUND_LOCATION_PLAN.md in the project repo — this section must be rewritten before Phase 2 of that plan, i.e. before a real user is ever shown the &quot;Always&quot; permission request, even during internal testing — not once the feature ships to production, and not just extended informally. This is a required update, not a legal decision, but it is called out here so it isn't missed.]</code></strong></p>
+<h2>4. How we use your information</h2>
+<ul>
+<li><p>To provide the core service: matching riders and drivers, navigation, calculating trip prices, processing payments, and enabling in-ride communication</p></li>
+<li><p>To verify driver identity and eligibility to drive (document review, approval workflow)</p></li>
+<li><p>To send you ride-status and account notifications</p></li>
+<li><p>To respond to support requests</p></li>
+<li><p>To investigate safety incidents (e.g., an SOS alert) and cooperate with emergency services where appropriate</p></li>
+<li><p>To maintain financial and transaction records for accounting and legal purposes (see §8, &quot;How long we keep your information&quot;)</p></li>
+<li><p>To detect and prevent fraud and abuse</p></li>
+</ul>
+<p>We do not sell your personal information. We do not use your data for third-party advertising.</p>
+<h2>5. Who we share information with</h2>
+<p>We share information only with the service providers (&quot;processors&quot;) that are actually necessary to run Joey, and only the information each one genuinely needs to perform its function:</p>
+<ul>
+<li><p><strong>Supabase</strong> — hosts our entire database and file storage. Effectively all app data passes through Supabase's infrastructure. <code class="todo">[VERIFY: which region/country Supabase's infrastructure for this project is hosted in, for the purposes of any required international-transfer disclosure.]</code></p></li>
+<li><p><strong>Twilio</strong> — delivers the one-time SMS codes used to sign in. Twilio sees your phone number and the fact that a code was sent to it.</p></li>
+<li><p><strong>PayPlus</strong> — processes payments, as described in §2.4. PayPlus sees whatever information is needed to process a charge (amount, and the card details you enter directly on PayPlus's own page — never through Joey).</p></li>
+<li><p><strong>Google</strong> (Places API) — Joey Rider uses Google's address-autocomplete service to help you search for pickup/drop-off addresses as you type. The text you type into the address search is sent to Google for that purpose. Joey Driver does not use this feature.</p></li>
+<li><p>Map rendering uses your device's built-in map framework (e.g., Apple Maps on iOS), subject to that platform's own data practices, not a separate data-sharing arrangement we've made with a mapping provider.</p></li>
+</ul>
+<p><strong>We also share limited information between the two parties of a ride:</strong> a rider and their matched driver can see each other's name, profile photo (if any), and — only while the ride is active — chat messages and live location, so the ride can actually happen. This is the minimum needed to complete a ride safely, not a general information exchange.</p>
+<p><strong>Phone numbers — mutually visible during an active ride only.</strong> So that a rider and driver can coordinate by phone (for example when a rider cannot find the car), <strong>each one's phone number is visible to the other — but only while the ride is active</strong> (from the moment the driver accepts until the ride is completed or cancelled). Once the ride closes, access to the number is automatically blocked at the database level.</p>
+<p>The call itself is placed through your device's own phone app, not through Joey. <strong>This means the call will appear in both devices' call history, and the number will remain there after the ride has ended</strong> — that is outside our control, exactly as with any ordinary phone call. <code class="todo">[To consider with a lawyer: whether separate explicit consent is required for this mutual disclosure, or whether disclosure here is sufficient. When a number-masking mechanism is introduced (see CLAUDE.md §4.4 feature #9), this paragraph will need updating.]</code></p>
+<p>We may disclose information if required by law, legal process, or a genuine safety emergency.</p>
+<p><code class="todo">[We do not currently use Veriff for identity verification, even though it has been mentioned in project planning — this policy will need updating if/when that changes. Do not describe Veriff as an active processor until it is actually connected in the app.]</code></p>
+<h2>6. Payments — how pricing and charging work</h2>
+<p>Israeli law requires that a licensed taxi charge fares based on its official physical meter, not an app estimate. Because of this, <strong>who sets the price</strong> differs by vehicle type — but <strong>how it's charged does not</strong>: in every case, Joey charges your saved payment card automatically when the trip is completed. There is no cash payment, and you are never asked to pay the driver directly, for any vehicle type.</p>
+<ul>
+<li><p><strong>For taxi (car) rides</strong>, the price you see in the app before and during the ride is an <strong>estimate only</strong>. The final amount is set by the driver's physical meter, entered into the app by the driver — and the app then charges your saved payment card that exact amount automatically.</p></li>
+<li><p><strong>For every other vehicle type, and for deliveries</strong>, the app calculates the final price itself and charges your saved payment card automatically when the trip is completed.</p></li>
+<li><p>In every case: no manual &quot;Pay&quot; step, and no cash.</p></li>
+</ul>
+<p>If you cancel a ride within a short free-cancellation window after a driver accepts (currently 3 minutes), there is no charge. After that window, a cancellation fee may apply (currently <code class="todo">[₪15 for Israel — confirm this is still the current value in app_settings before publishing, as it can change]</code>).</p>
+<h2>7. Account deletion</h2>
+<p>You can request deletion of your Joey account at any time from Settings in the app. Here is exactly what happens:</p>
+<ol>
+<li><p><strong>Requesting deletion starts a 30-day grace period.</strong> Your account is immediately locked — you can no longer request new rides — but nothing is deleted yet.</p></li>
+<li><p><strong>You can cancel the deletion request at any time during those 30 days</strong> by signing back into the app and choosing to cancel. If you don't cancel, deletion proceeds automatically once the 30 days pass.</p></li>
+<li><p><strong>What is permanently removed</strong> once the 30 days pass:</p>
+<ul>
+<li><p>Your name, phone number, email address, and profile photo.</p></li>
+<li><p>Your saved payment card details, emergency contacts, and push-notification token — deleted outright.</p></li>
+<li><p>The last device location we held for you.</p></li>
+<li><p><strong>If you are a driver:</strong> the documents you uploaded (ID card, driving licence, selfie, vehicle photo) are deleted from storage; your driving licence categories are deleted; and your vehicle registration number and model are removed from your driver record.</p></li>
+</ul>
+<p><code class="todo">[LAWYER / JOEY OWNERS: if this document commits to a fixed window for completing deletion (e.g. &quot;within 30 days&quot;), confirm with the technical team that deletion of driver document files runs automatically rather than being triggered by hand — as at the date of this draft the mechanism exists and is tested, but is triggered manually]</code></p></li>
+<li><p><strong>What is kept — and exactly what that includes.</strong> Your identifying details (name, phone, email) are removed from these records, which remain linked only to an anonymous internal reference. <strong>But the content itself is kept in full, including:</strong></p>
+<ul>
+<li><p><strong>The pickup and drop-off addresses of every ride you took</strong> — exactly as entered, including coordinates. <strong>If you used your home or work address, it is kept.</strong></p></li>
+<li><p><strong>The full text of the chat messages</strong> you sent and received.</p></li>
+<li><p><strong>The free-text comments you wrote in ratings.</strong></p></li>
+<li><p>Your payment and transaction records, and any SOS alerts you raised — including the location they were raised from.</p></li>
+</ul>
+<p>We keep these specifically because: (a) the other party to a ride (your driver or rider) has a legitimate record-keeping interest in that ride's history that shouldn't disappear because you deleted your account, and (b) we have financial and legal obligations to retain transaction records (see §8).</p>
+<p>🔴 <strong>Please understand:</strong> removing your name and phone number does <strong>not necessarily</strong> make this information impossible to trace back to you. A home address held in ride history, or the content of a chat message, can in practice point to a specific person even without a name. We say this plainly so you do not read &quot;deletion&quot; more broadly than it actually is.</p>
+<p><code class="todo">[LAWYER: determine whether the retention described here meets the definition of &quot;anonymisation&quot; under the Israeli Privacy Protection Law and its regulations, whether separate consent is required for it, and whether users should be offered a more complete erasure on request]</code></p></li>
+<li><p><strong>Your phone number is released once deletion completes</strong> — a different person can sign up with that number in the future, and their account starts completely empty; nothing from your old account carries over to them.</p></li>
+<li><p>This process is irreversible once the 30 days have passed.</p></li>
+</ol>
+<h2>8. How long we keep your information</h2>
+<ul>
+<li><p><strong>While your account is active:</strong> for as long as you keep using Joey.</p></li>
+<li><p><strong>Ride, payment, and transaction records:</strong> kept for <code class="todo">[FINANCIAL RECORD RETENTION PERIOD — a legal/accounting decision, commonly several years under Israeli tax and accounting requirements; do not publish this policy with this value still blank]</code>, even after an account is deleted (see §7).</p></li>
+<li><p><strong>Identity documents (drivers):</strong> <code class="todo">[RETENTION PERIOD FOR DRIVER DOCUMENTS — legal/business decision]</code>.</p></li>
+<li><p><strong>SOS alerts and safety-incident records:</strong> <code class="todo">[RETENTION PERIOD — legal/business decision, likely needs to be long enough to support any resulting investigation or legal process]</code>.</p></li>
+</ul>
+<h2>9. Your rights</h2>
+<p>You can:</p>
+<ul>
+<li><p>Access and review the personal information we hold about you (contact us, or use the in-app profile screens where available)</p></li>
+<li><p>Correct inaccurate information</p></li>
+<li><p>Request deletion of your account (§7)</p></li>
+<li><p>Withdraw consent for optional features (e.g., emergency contacts) by simply not using them, or removing what you've added</p></li>
+</ul>
+<p><code class="todo">[This section needs a lawyer's review to state your rights accurately and completely under the Israeli Privacy Protection Law (חוק הגנת הפרטיות) as currently in force, including any rights introduced by the 2025-2026 amendment referenced elsewhere in this project's internal notes, and to name the correct regulator/complaints contact (e.g., the Israeli Privacy Protection Authority). Nothing above should be read as a complete or legally precise statement of your statutory rights.]</code></p>
+<h2>10. Children's privacy</h2>
+<p>Joey is not directed at children, and we do not knowingly collect personal information from children under <code class="todo">[MINIMUM AGE — confirm with a lawyer which threshold applies; commonly 13 or 16 depending on jurisdiction]</code>. <code class="todo">[Confirm Joey's own minimum-age policy for using the service at all — see the Terms of Service for the related eligibility requirement.]</code></p>
+<h2>11. Security</h2>
+<p>We use industry-standard technical measures to protect your information, including encryption in transit, database-level access controls that restrict each user to their own data, and private (non-public) storage for sensitive documents accessed only via short-lived signed links. No system is 100% secure, and we cannot guarantee absolute security.</p>
+<h2>12. Changes to this policy</h2>
+<p>We may update this policy from time to time. <code class="todo">[Decide and state the notice mechanism — e.g., an in-app notice, an updated &quot;Last updated&quot; date, or direct notification for material changes — this is a business/legal decision, not yet made.]</code></p>
+<h2>13. Contact us</h2>
+<p>Questions about this policy or your personal information: <strong>support@joey-go.com</strong> (see the note in §1 — this mailbox is not live yet).</p>
+<hr>
+<h2>Open items — everything that needs a decision before this can be published</h2>
+<p>This list repeats every <code class="todo">[BRACKETED]</code> item above, in one place, so nothing is missed:</p>
+<ol>
+<li><p><strong>Legal entity name</strong> (§1)</p></li>
+<li><p><strong>Business address</strong> (§1)</p></li>
+<li><p><strong>Business registration number</strong> (ח.פ. / עוסק מורשה) (§1)</p></li>
+<li><p><strong>Effective date</strong> (top of document)</p></li>
+<li><p><strong>Supabase hosting region</strong> — a fact to verify, not a decision (§5)</p></li>
+<li><p><strong>Financial-record retention period</strong> (§8) — legal/accounting decision</p></li>
+<li><p><strong>Driver-document retention period</strong> (§8) — legal/business decision</p></li>
+<li><p><strong>SOS/safety-incident record retention period</strong> (§8) — legal/business decision</p></li>
+<li><p><strong>Full, lawyer-reviewed statement of user rights under Israeli privacy law</strong>, including the correct regulator/complaints contact (§9)</p></li>
+<li><p><strong>Minimum age policy</strong> (§10, and related in Terms of Service)</p></li>
+<li><p><strong>Notice-of-changes mechanism</strong> (§12)</p></li>
+<li><p><strong>Confirm the current cancellation-fee amount</strong> (₪15 assumed, §6) is still accurate before publishing</p></li>
+<li><p><strong>Legal determination: whether retaining addresses, messages and comments after account deletion qualifies as &quot;anonymisation&quot;</strong> (§7.4) — added 10/09/2026, after checking in the code exactly what survives deletion</p></li>
+<li><p><strong>If this document commits to a window for completing deletion, confirm that deletion of driver document files is automated</strong> (§7.3) — added 10/09/2026</p></li>
+<li><p><strong>Update §3 (Location) before Phase 2 of <code>BACKGROUND_LOCATION_PLAN.md</code></strong> (repo root) — not once the feature ships to production, but as soon as a real user is shown the &quot;Always&quot; permission request during internal testing. Not a legal decision, a required technical/compliance update, flagged so it isn't forgotten</p></li>
+</ol>
+  </article>
+</main>
+
+<footer>
+  <p>The <strong>support@joey-go.com</strong> mailbox is not set up yet — mail sent to it will not arrive.</p>
+  <p>&copy; Joey · joey-go.com</p>
+</footer>
+</body>
+</html>

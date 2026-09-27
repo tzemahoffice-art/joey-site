@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Terms of Service · Joey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="./">Joey</a>
+  <nav>
+    <a href="./">Home</a>
+    <a href="terms.he.html">עברית</a>
+  </nav>
+</header>
+
+<main>
+  <div class="draft" role="note">
+    <strong>Draft — not yet reviewed by a lawyer</strong>
+    <p>This document is based on what the app actually does, but it has <strong>not been reviewed by a lawyer and is not binding</strong>. Any text shown <code class="todo">[in square brackets]</code> is a legal or business decision that has not been made yet.</p>
+  </div>
+
+  <article>
+<h1>Joey — Terms of Service (English)</h1>
+<blockquote><p><strong>Draft prepared 30/08/2026 for legal review. Not a final, legally-binding document.</strong> Every <code class="todo">[BRACKETED]</code> item is a legal or business decision that has <strong>not</strong> been made yet. A complete list of every open item is repeated at the end of this document. This draft is grounded in what the Joey Rider and Joey Driver apps actually do today, verified against the codebase — not a generic template.</p></blockquote>
+<p><strong>Effective date:</strong> <code class="todo">[EFFECTIVE DATE]</code> <strong>Last updated:</strong> 12/09/2026 (draft)</p>
+<hr>
+<h2>1. Acceptance of these terms</h2>
+<p>These Terms of Service (&quot;Terms&quot;) govern your use of the Joey Rider and Joey Driver mobile applications (together, &quot;Joey,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), operated by:</p>
+<p><strong><code class="todo">[LEGAL ENTITY NAME]</code></strong> <code class="todo">[BUSINESS ADDRESS]</code> <code class="todo">[BUSINESS REGISTRATION NUMBER]</code></p>
+<p>By creating an account or using either app, you agree to these Terms and to our <a href="privacy.en.html">Privacy Policy</a>.</p>
+<h2>2. What Joey is</h2>
+<p>Joey is a platform that connects riders and delivery senders with independent, licensed vehicle operators. <strong>Joey does not itself provide transportation or delivery services, and is not a taxi or delivery company</strong> — it operates the technology that lets riders and drivers find and transact with each other. Drivers on Joey are independent operators, not Joey employees or agents. <code class="todo">[This positioning is an intentional legal/regulatory choice already reflected in the project's design (see CLAUDE.md §8 — Joey is described internally as &quot;a connection venue between a rider and a licensed vehicle owner,&quot; with license-to-vehicle-type matching handled through the driver approval process, not through pricing logic). A lawyer should review and confirm this framing is legally sound before publication — it is not a decision this document is making on its own.]</code></p>
+<p>Joey offers two services, selectable in the Joey Rider app:</p>
+<ul>
+<li><p><strong>Ride</strong> — passenger transportation, in one of five vehicle types (standard car, van, premium, XL, or motorbike)</p></li>
+<li><p><strong>Delivery</strong> — package delivery, in the same set of vehicle types</p></li>
+</ul>
+<h2>3. Eligibility</h2>
+<p>You must be at least <code class="todo">[MINIMUM AGE]</code> years old to create a Joey account. <code class="todo">[Confirm this age with a lawyer — see the related, separate question of the minimum age for personal-data collection in the Privacy Policy §10, which may not be the same number.]</code> By using Joey, you confirm that the information you provide during registration is accurate.</p>
+<h2>4. Accounts</h2>
+<ul>
+<li><p>Joey accounts are created and accessed using your phone number and a one-time SMS verification code — there is no password.</p></li>
+<li><p>You are responsible for keeping access to your phone number secure, since it is how your account is authenticated.</p></li>
+<li><p>One phone number corresponds to one account. <code class="todo">[Confirm whether Joey's policy permits/prohibits a single person holding both a rider and a driver account — not currently technically enforced one way or the other, and not addressed elsewhere in this draft; flagging so it's a deliberate decision, not an oversight.]</code></p></li>
+<li><p>Riders must have a valid saved payment method on file before requesting most rides (see §7) — this is enforced by the app itself, not just a policy statement.</p></li>
+</ul>
+<h2>5. Pricing and payment</h2>
+<p>Israeli law requires a licensed taxi to charge fares based on its official physical meter, not an app-generated price. This affects <strong>who sets the price</strong>, not how it's charged — <strong>Joey always charges your saved payment card automatically, for every vehicle type. There is no cash payment, and you never pay a driver directly.</strong></p>
+<ul>
+<li><p><strong>For taxi (car) rides:</strong> the price shown in the app before and during the ride is an <strong>estimate only</strong>, for your planning purposes. The actual fare is set by the driver's physical meter and entered into the app by the driver — Joey then charges your saved payment card that exact amount automatically.</p></li>
+<li><p><strong>For all other vehicle types (van, premium, XL, motorbike) and for deliveries:</strong> Joey calculates the final price itself and charges it automatically to your saved payment card when the ride or delivery is completed.</p></li>
+<li><p>In every case, there is no manual &quot;pay&quot; step and no cash payment.</p></li>
+<li><p><strong>A valid saved payment method is required to request most rides</strong> (this requirement can vary in the future by country, as reflected in the app's own configuration). Joey does not process or store your full card number — see the Privacy Policy §2.4 for exactly how card data is handled through our payment processor, PayPlus.</p></li>
+<li><p>Prices are set according to Joey's published pricing (base fare, per-kilometer rate, per-minute rate, which may vary by vehicle type and country) at the time of your request, subject to change without prior individual notice.</p></li>
+</ul>
+<h2>6. Cancellations and cancellation fees</h2>
+<ul>
+<li><p>Cancelling a ride within <code class="todo">[3 minutes — confirm this is still the current free-cancellation window before publishing]</code> of a driver accepting is free.</p></li>
+<li><p>Cancelling after that window may incur a cancellation fee (currently <code class="todo">[₪15 for Israel — confirm this is still the current value before publishing, as it can change independently of this document]</code>).</p></li>
+<li><p>Drivers may also cancel a ride; repeated driver-side or rider-side cancellations may affect your ability to use Joey (see §10).</p></li>
+</ul>
+<h2>7. Promo codes</h2>
+<p>Promo codes, where offered, are subject to the specific terms shown at the time of use, are not transferable, and may be withdrawn or changed by Joey at any time.</p>
+<h2>8. Driver eligibility, documents, and approval</h2>
+<p>If you register as a driver:</p>
+<ul>
+<li><p>You must provide accurate vehicle information and upload identity and vehicle documents (ID, driving licence, selfie, vehicle photo) as part of onboarding. <code class="todo">[Corrected 10/09/2026 against the actual code: the previous wording required the driver to provide &quot;type, plate number, model&quot; — but onboarding only collects the vehicle type (plus licence categories and registration classification). Plate number and vehicle model are not collected on any screen — they are shown in the driver profile as &quot;not provided&quot; and nothing more. Do not oblige a driver to have &quot;provided&quot; fields the app never asked for. Decide: add collection for them, or drop the requirement from this document.]</code></p></li>
+<li><p>Your account is reviewed and must be <strong>approved</strong> before you can accept rides. Joey may reject an application, and may request updated documents at any time. <code class="todo">[The in-app path for a driver to re-submit a document after initial approval does not exist yet as of this draft — see STATUS.md in the project repo, &quot;wave two&quot; admin panel work. If this Terms document is published before that feature ships, this section should describe the actual current re-submission process (likely: contact support), not an in-app flow that doesn't exist yet.]</code></p></li>
+<li><p>You are solely responsible for holding any license, permit, or insurance required by law to operate your vehicle for the service type you register for. Joey's driver approval process checks that your submitted documents match your registered vehicle type, but approval by Joey does not substitute for your own legal responsibility to be properly licensed and insured.</p></li>
+<li><p>Joey may suspend or terminate a driver's ability to accept rides, with or without a stated reason related to safety, fraud, policy violations, or repeated complaints. A suspended driver's active ride at the time of suspension is unaffected — suspension only prevents new ride assignments going forward.</p></li>
+<li><p><strong>For every ride and delivery, including taxi rides, Joey collects payment automatically from the rider's saved card and credits your earnings to your in-app wallet balance</strong> — there is no cash collection and no direct collection from the rider, for any vehicle type. For taxi rides, the amount charged is exactly what you entered from the physical meter; for every other vehicle type and for deliveries, Joey calculates the amount itself. <code class="todo">[the payout mechanism from wallet balance to your bank account is currently a manual monthly process handled outside the app, not an in-app &quot;withdraw&quot; feature — describe this accurately and confirm the current process with the business before publishing, since it is unusual for a Terms of Service to describe a manual, non-automated payout process and a lawyer should confirm how much operational detail belongs here versus in a separate driver agreement.]</code></p></li>
+</ul>
+<h2>9. Code of conduct</h2>
+<p>You agree not to:</p>
+<ul>
+<li><p>Provide false information about your identity, vehicle, or documents</p></li>
+<li><p>Use Joey for any unlawful purpose</p></li>
+<li><p>Harass, threaten, or discriminate against another user</p></li>
+<li><p>Attempt to circumvent Joey's pricing, payment, or safety mechanisms</p></li>
+<li><p>Misuse the in-app SOS/emergency feature</p></li>
+</ul>
+<p>Violation of this section may result in suspension or termination of your account.</p>
+<h2>10. Ratings</h2>
+<p>Riders and drivers may rate each other after a completed ride. Ratings are used to maintain service quality and may factor into account review decisions. <code class="todo">[Confirm whether/how a rating threshold affects account status — not currently automated in the app; ratings are recorded and displayed but do not currently trigger any automatic account action.]</code></p>
+<h2>11. In-app communication and safety features</h2>
+<ul>
+<li><p><strong>Sending</strong> messages to your matched rider/driver is possible only while a ride is in an active state (accepted through in-progress) — not before a match is made, and not after the ride ends.</p></li>
+<li><p><strong>Reading the conversation, however, is not time-limited:</strong> both parties to a ride continue to see their exchange after the ride has ended. Message content is also <strong>retained after account deletion</strong> — see Privacy Policy §7.4. <code class="todo">[Corrected 10/09/2026 against the actual code: the previous wording said chat is available &quot;not after the ride ends&quot;, which is true only of sending. The database read permissions are not conditioned on ride status at all.]</code></p></li>
+<li><p>The in-app SOS feature sends your location and a timestamp to Joey when activated. <strong>It is not a substitute for contacting emergency services (police, ambulance) directly, and Joey does not guarantee any particular response time.</strong> <code class="todo">[A lawyer should review this disclaimer specifically — safety-feature liability language needs to be legally sound, not just factually accurate.]</code></p></li>
+</ul>
+<h2>12. Account deletion</h2>
+<p>You may request deletion of your account at any time, as described in the Privacy Policy §7 — a 30-day grace period during which you can cancel, and your phone number released for future reuse once it completes.</p>
+<p><strong>When a deletion request cannot be made.</strong> The request will be refused while any of the following is true, and the app will show you which one is blocking it:</p>
+<ul>
+<li><p>you have an active ride (as rider or driver) — finish or cancel it first;</p></li>
+<li><p>you have an unpaid positive wallet balance;</p></li>
+<li><p>you have an open debt owed to the platform.</p></li>
+</ul>
+<p><strong>What is kept after deletion.</strong> Your ride and payment history is retained and detached from your name, phone and email — <strong>but the content itself is kept in full, including the pickup and drop-off addresses of your rides, the full text of your chat messages, and the rating comments you wrote.</strong> The precise list, and the reasons for it, are in Privacy Policy §7.4 — <strong>read it before submitting a deletion request.</strong> <code class="todo">[Expanded 10/09/2026: the previous wording (&quot;ride/payment history retained, linked to an anonymized account&quot;) was accurate but too general, and did not mention the eligibility conditions for deletion at all.]</code></p>
+<h2>13. Disclaimers and limitation of liability</h2>
+<p><code class="todo">[This entire section requires drafting by a lawyer. It must not be based on a generic template — it needs to accurately reflect that: Joey is a connection platform, not a transportation provider (§2); pricing for taxi rides is a meter-based estimate that Joey does not control (§5); Joey performs a driver document/approval review but that review does not substitute for the driver's own legal licensing obligations (§8); the SOS feature has explicit limitations (§11). None of the above should be treated as final liability language — only as the factual basis a lawyer needs to draft this section correctly.]</code></p>
+<h2>14. Termination by Joey</h2>
+<p>Joey may suspend or terminate your account for violation of these Terms, fraud, safety concerns, or as required by law. Where practical, we will provide notice of the reason. <code class="todo">[Verify 10/09/2026: the suspension or rejection reason IS recorded in the system by staff, but no screen in either app currently shows it to the user — in practice notice would have to go through another channel (support). &quot;Where practical&quot; covers this legally, but committing to actual notice would require building that path.]</code></p>
+<h2>15. Governing law and disputes</h2>
+<p><code class="todo">[GOVERNING LAW / JURISDICTION / DISPUTE RESOLUTION MECHANISM — legal decision, not made in this draft. Israel is a reasonable default given the product's regulatory context (see §5's taxi-meter requirement, which is Israeli law), but the exact clause, competent court/arbitration mechanism, and any consumer-protection carve-outs required under Israeli law need a lawyer's drafting, not assumption.]</code></p>
+<h2>16. Changes to these terms</h2>
+<p><code class="todo">[Decide and state the notice mechanism for material changes to these Terms — business/legal decision, not yet made. Likely the same mechanism chosen for the Privacy Policy §12, for consistency.]</code></p>
+<h2>17. Contact us</h2>
+<p>Questions about these Terms: <strong>support@joey-go.com</strong> <code class="todo">[the joey-go.com domain was registered on 12/09/2026, but this mailbox has NOT been set up yet — mail sent to it will not arrive. Set it up before publishing these Terms anywhere.]</code></p>
+<hr>
+<h2>Open items — everything that needs a decision before this can be published</h2>
+<blockquote><p><strong>Updated 10/09/2026:</strong> this document was checked against the actual code and three divergences were found and corrected in the body: collection of plate number / vehicle model (§8), chat availability after a ride ends (§11), and the eligibility conditions for account deletion (§12). See STATUS.md §59.</p></blockquote>
+<ol>
+<li><p><strong>Legal entity name, business address, business registration number</strong> (§1)</p></li>
+<li><p><strong>Effective date</strong> (top of document)</p></li>
+<li><p><strong>Lawyer confirmation of the &quot;platform, not a transportation provider&quot; legal framing</strong> (§2)</p></li>
+<li><p><strong>Minimum age to use Joey</strong> (§3) — and confirm it's consistent with, or deliberately different from, the Privacy Policy's data-collection age threshold</p></li>
+<li><p><strong>Whether one person may hold both a rider and a driver account</strong> (§4) — not currently technically enforced</p></li>
+<li><p><strong>Confirm the current free-cancellation window (3 minutes) and cancellation fee amount (₪15)</strong> are still accurate before publishing (§6)</p></li>
+<li><p><strong>Describe the actual current driver document-resubmission process</strong> (§8) — the in-app flow doesn't exist yet as of this draft</p></li>
+<li><p><strong>Confirm and describe the actual current driver payout process</strong> (§8) — currently manual/monthly, not an in-app feature; decide how much detail belongs in these Terms vs. a separate driver agreement</p></li>
+<li><p><strong>Confirm whether/how ratings affect account status</strong> (§10) — not currently automated</p></li>
+<li><p><strong>Lawyer-drafted safety-feature disclaimer</strong> (§11)</p></li>
+<li><p><strong>Full disclaimers and limitation-of-liability section</strong> (§13) — needs complete lawyer drafting, not just fact-checking</p></li>
+<li><p><strong>Governing law, jurisdiction, and dispute resolution mechanism</strong> (§15)</p></li>
+<li><p><strong>Notice-of-changes mechanism</strong> (§16)</p></li>
+<li><p>🔴 <strong>Whether a promo discount may be applied to a taxi ride, so the rider pays less than the metered amount</strong> (§6) — added 18/09/2026. A <code>car</code> ride is priced from the official taxi price-control order, and since 18/09/2026 the code supports a promo code that reduces the amount actually charged. <strong>The reasoning:</strong> the order sets a <strong>maximum</strong> price, so charging less is a commercial discount by Joey rather than a departure from the tariff — <strong>but that is a developer's conclusion, not a lawyer's, and it has not been checked against the order or with the regulator.</strong> Confirm before any promo code is ever enabled for <code>car</code>. <strong>Not urgent in practice:</strong> the promo table is empty, <code>car</code> has not yet moved to <code>metered_tiered</code>, and no ride has ever carried a code.</p></li>
+</ol>
+  </article>
+</main>
+
+<footer>
+  <p>The <strong>support@joey-go.com</strong> mailbox is not set up yet — mail sent to it will not arrive.</p>
+  <p>&copy; Joey · joey-go.com</p>
+</footer>
+</body>
+</html>
