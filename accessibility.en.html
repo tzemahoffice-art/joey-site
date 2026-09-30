@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Accessibility Statement · Joey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- WCAG 2.0 2.4.1 Bypass Blocks (Level A): the header repeats on every page,
+     so a keyboard user gets a way past it. Hidden until focused. -->
+<a class="skip" href="#main">Skip to main content</a>
+<header class="bar">
+  <a class="brand" href="./">Joey</a>
+  <nav>
+    <a href="./">Home</a>
+    <a href="accessibility.en.html">Accessibility statement</a>
+    <!-- 3.1.2 Language of Parts (AA): this link's own text is in the other
+         language, so it is marked as such rather than inheriting the page's. -->
+    <a href="accessibility.he.html" lang="he" dir="rtl" hreflang="he">עברית</a>
+  </nav>
+</header>
+
+<!-- tabindex="-1" so the skip link actually moves focus, not just the
+     viewport: without it some browsers scroll and leave focus behind. -->
+<main id="main" tabindex="-1">
+  <div class="draft" role="note">
+    <strong>Draft — not yet reviewed by a lawyer</strong>
+    <p>This document is based on what the app actually does, but it has <strong>not been reviewed by a lawyer and is not binding</strong>. Any text shown <code class="todo">[in square brackets]</code> is a legal or business decision that has not been made yet.</p>
+  </div>
+
+  <article>
+<h1>Joey — Accessibility Statement (English)</h1>
+<blockquote><p><strong>Draft written on 30/09/2026.</strong> Anything shown in square brackets <code class="todo">[like this]</code> is a detail that has not been decided yet and must be filled in before this is published as final. This statement covers the <strong>website</strong> <code>joey-go.com</code> only. The accessibility of the Joey Rider and Joey Driver apps <strong>has not been assessed and is not covered here</strong> — see &quot;What is not yet accessible&quot; below.</p></blockquote>
+<p><strong>Last updated:</strong> 30/09/2026 (draft)</p>
+<hr>
+<h2>1. Our commitment</h2>
+<p><code class="todo">[legal entity name]</code> treats accessibility as part of the service rather than an addition to it. We want anyone to be able to read the documents on this site, whatever their ability, disability, or assistive technology.</p>
+<h2>2. The standard this site was made accessible to</h2>
+<p>This site was made accessible in accordance with <strong>Israeli Standard SI 5568</strong>, which adopts the W3C's <strong>WCAG 2.0</strong> guidelines at conformance level <strong>AA</strong>.</p>
+<p>This follows the <strong>Equal Rights for Persons with Disabilities (Accessibility Adjustments for Services) Regulations, 5773-2013</strong>.</p>
+<h2>3. What was checked and made accessible</h2>
+<p>The following was actually tested on 30/09/2026, across all five pages of the site (home, plus the privacy policy and terms of service in both languages):</p>
+<ul>
+<li><p><strong>Colour contrast</strong> — every text-and-background combination on the site was <strong>measured by calculation</strong>, not judged by eye. Every pair meets the requirement: at least <strong>4.5:1</strong> for normal text and at least <strong>3:1</strong> for large text. This was checked <strong>in both light and dark mode</strong>, including the semi-transparent top bar at its worst case. The weakest pair on the site is 4.83:1.</p></li>
+<li><p><strong>Hierarchical heading structure</strong> — every page begins with a single <code>h1</code>, and heading levels descend in order without skipping.</p></li>
+<li><p><strong>Full keyboard navigation</strong> — the whole site is operable by keyboard. There is no interactive component anywhere on it other than links, there are no focus traps, and everything that can receive focus has a <strong>visible focus indicator</strong>.</p></li>
+<li><p><strong>Skip link</strong> — every page starts with a &quot;Skip to main content&quot; link, revealed on keyboard focus, so the repeated header can be bypassed.</p></li>
+<li><p><strong>Language marking</strong> — every page carries correct <code>lang</code> and <code>dir</code> attributes, and on the bilingual home page <strong>each language block is marked separately</strong> with its own language and direction. The links that switch language are marked in the language they lead to.</p></li>
+<li><p><strong>Text alternatives for images</strong> — <strong>the site contains no images at all.</strong> No content images, no images of text, no icons carrying meaning. The round mark beside the wordmark is a CSS decoration and is not announced by a screen reader. There is therefore no image on this site that requires alternative text.</p></li>
+<li><p><strong>Text resizing</strong> — text can be enlarged to <strong>200%</strong> without loss of content or functionality, and pinch-zoom is not blocked on phones.</p></li>
+<li><p><strong>Phone display</strong> — checked at phone width, with no horizontal scrolling.</p></li>
+<li><p><strong>Semantic structure</strong> — pages are built from real content landmarks (<code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>, <code>footer</code>), real lists and real blockquotes, rather than from visual styling alone.</p></li>
+<li><p><strong>Valid markup</strong> — the site has no duplicate IDs and no malformed tags.</p></li>
+</ul>
+<h2>4. Privacy: this site has no cookies and no tracking</h2>
+<p>This belongs here rather than in a separate notice, because it means there is no overlay, dialog or banner to dismiss before you can read anything.</p>
+<p><strong>Verified on 30/09/2026:</strong> the site contains <strong>no scripts at all</strong>, no third-party scripts, no external fonts, no images, no embedded frames, and no use of cookies or local storage. Fonts are the device's own system fonts. <strong>The site sets no cookies and collects no visitor information</strong> — which is also why there is <strong>no cookie banner</strong>, since one would state something untrue.</p>
+<blockquote><p>The site's hosting provider may log requests on its own server (an IP address, for instance), as any web server does. That is not tracking by Joey and is not cookie-based.</p></blockquote>
+<h2>5. What is not yet accessible — exceptions</h2>
+<p>We state the exceptions plainly rather than leaving them to be inferred:</p>
+<ul>
+<li><p>🔴 <strong>This site has not been surveyed by an external certified accessibility expert.</strong> The testing in section 3 was carried out internally against SI 5568 / WCAG 2.0 AA. <code class="todo">[whether an external accessibility survey will be carried out, and when]</code></p></li>
+<li><p><strong>The documents on this site are drafts.</strong> The privacy policy and terms of service have not been reviewed by a lawyer, and anything in square brackets is a decision not yet made. That is a limitation of <strong>content</strong>, not of accessibility — but it matters to anyone relying on the documents.</p></li>
+<li><p><strong>There are no accessible PDF versions</strong> of the documents. They are meant to be read in a browser, and are styled for printing directly from it (including saving as PDF) without losing content.</p></li>
+<li><p>🔴 <strong>The Joey Rider and Joey Driver apps are not covered by this statement.</strong> Their accessibility has not been assessed. <code class="todo">[target date for making the apps accessible]</code></p></li>
+<li><p><strong>The site does not offer individual accessibility arrangements</strong> (such as having the documents read out by phone). <code class="todo">[whether such a service will be offered]</code></p></li>
+</ul>
+<h2>6. Accessibility enquiries</h2>
+<p>If you hit an accessibility problem on this site, we want to know, and we will fix it.</p>
+<ul>
+<li><p><strong>Email:</strong> support@joey-go.com</p></li>
+<li><p><strong>Accessibility coordinator:</strong> <code class="todo">[accessibility coordinator name]</code></p></li>
+<li><p><strong>Phone:</strong> <code class="todo">[accessibility enquiries phone]</code></p></li>
+<li><p><strong>Address:</strong> <code class="todo">[legal entity address]</code></p></li>
+</ul>
+<p>It helps to describe what you were trying to do, on which page, and with what technology (browser, screen reader, operating system) — it shortens the time to a fix.</p>
+<blockquote><p>⚠️ <strong>The <code>support@joey-go.com</code> mailbox is not set up yet</strong> as of 30/09/2026, and mail sent to it will not arrive. It must be created before this statement is published as final.</p></blockquote>
+<h2>7. Open items in this statement</h2>
+<p>In one place, for convenience:</p>
+<ol>
+<li><p><code class="todo">[legal entity name]</code></p></li>
+<li><p><code class="todo">[legal entity address]</code></p></li>
+<li><p><code class="todo">[accessibility coordinator name]</code></p></li>
+<li><p><code class="todo">[accessibility enquiries phone]</code></p></li>
+<li><p><code class="todo">[whether an external accessibility survey will be carried out, and when]</code></p></li>
+<li><p><code class="todo">[target date for making the apps accessible]</code></p></li>
+<li><p><code class="todo">[whether individual accessibility arrangements will be offered]</code></p></li>
+<li><p>Actually creating the <code>support@joey-go.com</code> mailbox</p></li>
+</ol>
+<h3>A question for the lawyer, not an item to fill in</h3>
+<ol>
+<li><p>🔴 <strong><code class="todo">[whether the extent of the accessibility obligation varies with the size of the business]</code></strong> — the regulations scale certain obligations by the size and turnover of the business and set different deadlines. The question applies to both the website and the apps, and in particular to <strong>whether a survey by a certified accessibility expert is required</strong> (item 5) or whether self-assessment plus this statement is sufficient. <strong>This is a legal question, not a business decision</strong> — to go to the lawyer along with the other documents.</p></li>
+</ol>
+  </article>
+</main>
+
+<footer>
+  <p>The <strong>support@joey-go.com</strong> mailbox is not set up yet — mail sent to it will not arrive.</p>
+  <p><a href="accessibility.en.html">Accessibility statement</a></p>
+  <p>&copy; Joey · joey-go.com</p>
+</footer>
+</body>
+</html>

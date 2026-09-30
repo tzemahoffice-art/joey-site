@@ -8,15 +8,23 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- WCAG 2.0 2.4.1 Bypass Blocks (Level A): the header repeats on every page,
+     so a keyboard user gets a way past it. Hidden until focused. -->
+<a class="skip" href="#main">דלג לתוכן הראשי</a>
 <header class="bar">
   <a class="brand" href="./">Joey</a>
   <nav>
     <a href="./">דף הבית</a>
-    <a href="privacy.en.html">English</a>
+    <a href="accessibility.he.html">הצהרת נגישות</a>
+    <!-- 3.1.2 Language of Parts (AA): this link's own text is in the other
+         language, so it is marked as such rather than inheriting the page's. -->
+    <a href="privacy.en.html" lang="en" dir="ltr" hreflang="en">English</a>
   </nav>
 </header>
 
-<main>
+<!-- tabindex="-1" so the skip link actually moves focus, not just the
+     viewport: without it some browsers scroll and leave focus behind. -->
+<main id="main" tabindex="-1">
   <div class="draft" role="note">
     <strong>טיוטה — טרם עברה בדיקה משפטית</strong>
     <p>המסמך הזה נכתב על בסיס מה שהאפליקציה עושה בפועל, אך <strong>טרם נבדק על ידי עורך דין ואינו מסמך מחייב</strong>. כל טקסט המופיע <code class="todo">[בסוגריים מרובעים]</code> הוא החלטה משפטית או עסקית שטרם התקבלה.</p>
@@ -186,6 +194,7 @@
 
 <footer>
   <p>תיבת הדואר <strong>support@joey-go.com</strong> טרם הוקמה — דואר שיישלח אליה כרגע לא יגיע.</p>
+  <p><a href="accessibility.he.html">הצהרת נגישות</a></p>
   <p>&copy; Joey · joey-go.com</p>
 </footer>
 </body>

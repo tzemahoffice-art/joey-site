@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>הצהרת נגישות · Joey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- WCAG 2.0 2.4.1 Bypass Blocks (Level A): the header repeats on every page,
+     so a keyboard user gets a way past it. Hidden until focused. -->
+<a class="skip" href="#main">דלג לתוכן הראשי</a>
+<header class="bar">
+  <a class="brand" href="./">Joey</a>
+  <nav>
+    <a href="./">דף הבית</a>
+    <a href="accessibility.he.html">הצהרת נגישות</a>
+    <!-- 3.1.2 Language of Parts (AA): this link's own text is in the other
+         language, so it is marked as such rather than inheriting the page's. -->
+    <a href="accessibility.en.html" lang="en" dir="ltr" hreflang="en">English</a>
+  </nav>
+</header>
+
+<!-- tabindex="-1" so the skip link actually moves focus, not just the
+     viewport: without it some browsers scroll and leave focus behind. -->
+<main id="main" tabindex="-1">
+  <div class="draft" role="note">
+    <strong>טיוטה — טרם עברה בדיקה משפטית</strong>
+    <p>המסמך הזה נכתב על בסיס מה שהאפליקציה עושה בפועל, אך <strong>טרם נבדק על ידי עורך דין ואינו מסמך מחייב</strong>. כל טקסט המופיע <code class="todo">[בסוגריים מרובעים]</code> הוא החלטה משפטית או עסקית שטרם התקבלה.</p>
+  </div>
+
+  <article>
+<h1>Joey — הצהרת נגישות (עברית)</h1>
+<blockquote><p><strong>טיוטה שנכתבה ב-30/09/2026.</strong> כל פריט בסוגריים מרובעים <code class="todo">[כך]</code> הוא פרט שטרם נקבע וצריך להתמלא לפני פרסום סופי. ההצהרה הזו מתארת את <strong>האתר</strong> <code>joey-go.com</code> בלבד. הנגישות של אפליקציות Joey Rider ו-Joey Driver <strong>טרם נבדקה ואינה מכוסה כאן</strong> — ראה &quot;מה טרם הונגש&quot; למטה.</p></blockquote>
+<p><strong>עודכן לאחרונה:</strong> 30/09/2026 (טיוטה)</p>
+<hr>
+<h2>1. המחויבות שלנו</h2>
+<p><code class="todo">[שם הישות המשפטית]</code> רואה בנגישות חלק מהשירות ולא תוספת לו. אנחנו פועלים כדי שכל אדם יוכל לקרוא את המסמכים באתר הזה, בלי תלות ביכולת, במוגבלות או בטכנולוגיה שהוא משתמש בה.</p>
+<h2>2. התקן שלפיו הונגש האתר</h2>
+<p>האתר הונגש בהתאם ל<strong>תקן הישראלי ת&quot;י 5568</strong>, המאמץ את הנחיות <strong>WCAG 2.0</strong> של ה-W3C, ברמת התאמה <strong>AA</strong>.</p>
+<p>זאת בהתאם ל<strong>תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע&quot;ג-2013</strong>.</p>
+<h2>3. מה נבדק והונגש</h2>
+<p>הבדיקות הבאות בוצעו בפועל ב-30/09/2026, על חמשת עמודי האתר (דף הבית, מדיניות פרטיות ותנאי שימוש בשתי השפות):</p>
+<ul>
+<li><p><strong>ניגודיות צבעים</strong> — כל שילוב של טקסט ורקע באתר <strong>נמדד</strong> בחישוב, לא בהתרשמות. כל צירוף עומד בדרישה: לפחות <strong>4.5:1</strong> לטקסט רגיל ולפחות <strong>3:1</strong> לטקסט גדול. הבדיקה בוצעה <strong>גם במצב בהיר וגם במצב כהה</strong>, כולל הסרגל העליון השקוף למחצה במקרה הגרוע ביותר שלו. הצירוף החלש ביותר באתר עומד על 4.83:1.</p></li>
+<li><p><strong>מבנה כותרות היררכי</strong> — כל עמוד מתחיל בכותרת <code>h1</code> יחידה, וההיררכיה יורדת בסדר בלי לדלג על רמות.</p></li>
+<li><p><strong>ניווט מקלדת מלא</strong> — האתר כולו נגיש במקלדת. אין באתר שום רכיב אינטראקטיבי מלבד קישורים, אין לוכדי מיקוד (focus traps), ולכל רכיב שמקבל מיקוד יש <strong>סימון מיקוד גלוי</strong>.</p></li>
+<li><p><strong>קישור דילוג לתוכן</strong> — בראש כל עמוד יש קישור &quot;דלג לתוכן הראשי&quot;, הנגלה בעת מיקוד במקלדת, המאפשר לדלג על הסרגל החוזר.</p></li>
+<li><p><strong>סימון שפה</strong> — לכל עמוד יש תג <code>lang</code> ו-<code>dir</code> נכונים, ובדף הבית, שהוא דו-לשוני, <strong>כל בלוק שפה מסומן בנפרד</strong> בשפה ובכיוון שלו. גם קישורי המעבר בין השפות מסומנים בשפת היעד שלהם.</p></li>
+<li><p><strong>טקסטים חלופיים לתמונות</strong> — <strong>באתר אין תמונות כלל.</strong> אין תמונות תוכן, אין תמונות של טקסט, ואין אייקונים נושאי מידע. הסמן העגול לצד השם הוא עיטור CSS בלבד ואינו נקרא ע&quot;י קורא מסך. לכן אין באתר שום תמונה שדורשת טקסט חלופי.</p></li>
+<li><p><strong>הגדלת טקסט</strong> — האתר מאפשר הגדלת טקסט עד <strong>200%</strong> בלי אובדן תוכן או פונקציונליות, ואינו חוסם את מחווה הזום בטלפון.</p></li>
+<li><p><strong>תצוגה בטלפון</strong> — האתר נבדק ברוחב טלפון, בלי גלילה אופקית.</p></li>
+<li><p><strong>מבנה סמנטי</strong> — העמודים בנויים מאזורי תוכן סמנטיים (<code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>, <code>footer</code>), רשימות אמיתיות וציטוטים אמיתיים — ולא מעיצוב חזותי בלבד.</p></li>
+<li><p><strong>קוד תקין</strong> — אין באתר מזהים כפולים או תגיות לא תקינות.</p></li>
+</ul>
+<h2>4. פרטיות: באתר הזה אין עוגיות ואין מעקב</h2>
+<p>זה חלק מהנגישות, לא נושא נפרד: אין באתר שום חסימה, חלונית או באנר שצריך לסגור לפני שאפשר לקרוא.</p>
+<p><strong>נבדק בפועל ב-30/09/2026:</strong> באתר <strong>אין אף סקריפט</strong>, אין סקריפטים של צד שלישי, אין פונטים חיצוניים, אין תמונות, אין מסגרות מוטמעות (iframe), ואין שימוש בעוגיות או באחסון מקומי. הגופנים הם גופני המערכת של המכשיר עצמו. <strong>האתר אינו מציב עוגיות ואינו אוסף מידע על המבקרים</strong> — ולכן גם <strong>אין באתר באנר עוגיות</strong>, שהיה מצהיר הצהרה שגויה.</p>
+<blockquote><p>ספק האחסון של האתר עשוי לתעד בקשות בשרת שלו (למשל כתובת IP), כמו כל שרת אינטרנט. זה אינו מעקב מצד Joey ואינו מבוסס עוגיות.</p></blockquote>
+<h2>5. מה טרם הונגש — חריגים</h2>
+<p>אנחנו מציינים את החריגים במפורש ולא משאירים אותם לפרשנות:</p>
+<ul>
+<li><p>🔴 <strong>האתר לא עבר סקר נגישות ע&quot;י מוסמך נגישות חיצוני.</strong> הבדיקות בסעיף 3 בוצעו פנימית מול דרישות ת&quot;י 5568 / WCAG 2.0 AA. <code class="todo">[האם יבוצע סקר נגישות חיצוני, ומתי]</code></p></li>
+<li><p><strong>המסמכים באתר הם טיוטות.</strong> מדיניות הפרטיות ותנאי השימוש טרם נבדקו ע&quot;י עורך דין, וטקסט המופיע בסוגריים מרובעים הוא החלטה שטרם התקבלה. זו מגבלה של <strong>תוכן</strong>, לא של נגישות — אך היא נוגעת לכל מי שמסתמך על המסמכים.</p></li>
+<li><p><strong>אין גרסאות PDF נגישות</strong> של המסמכים. המסמכים מיועדים לקריאה בדפדפן, והם מעוצבים להדפסה ישירה מהדפדפן (כולל שמירה כ-PDF) בלי איבוד תוכן.</p></li>
+<li><p>🔴 <strong>אפליקציות Joey Rider ו-Joey Driver אינן מכוסות בהצהרה הזו.</strong> נגישות האפליקציות טרם נבדקה. <code class="todo">[מועד יעד להנגשת האפליקציות]</code></p></li>
+<li><p><strong>האתר אינו מספק תיאום הנגשה פרטני</strong> (כמו הקראה טלפונית של המסמכים). <code class="todo">[האם יוצע שירות כזה]</code></p></li>
+</ul>
+<h2>6. פניות בנושא נגישות</h2>
+<p>נתקלתם בבעיית נגישות באתר? נשמח לדעת, ונתקן.</p>
+<ul>
+<li><p><strong>דואר אלקטרוני:</strong> support@joey-go.com</p></li>
+<li><p><strong>רכז הנגישות:</strong> <code class="todo">[שם רכז הנגישות]</code></p></li>
+<li><p><strong>טלפון:</strong> <code class="todo">[טלפון לפניות נגישות]</code></p></li>
+<li><p><strong>כתובת:</strong> <code class="todo">[כתובת הישות המשפטית]</code></p></li>
+</ul>
+<p>בפנייה כדאי לתאר מה ניסיתם לעשות, באיזה עמוד, ובאיזו טכנולוגיה (דפדפן, קורא מסך, מערכת הפעלה) — זה מקצר את זמן התיקון.</p>
+<blockquote><p>⚠️ <strong>תיבת הדואר <code>support@joey-go.com</code> טרם הוקמה</strong> נכון ל-30/09/2026, ודואר שיישלח אליה כרגע לא יגיע. יש להקים אותה לפני שההצהרה הזו מתפרסמת כהצהרה סופית.</p></blockquote>
+<h2>7. פריטים פתוחים בהצהרה הזו</h2>
+<p>במקום אחד, לנוחות:</p>
+<ol>
+<li><p><code class="todo">[שם הישות המשפטית]</code></p></li>
+<li><p><code class="todo">[כתובת הישות המשפטית]</code></p></li>
+<li><p><code class="todo">[שם רכז הנגישות]</code></p></li>
+<li><p><code class="todo">[טלפון לפניות נגישות]</code></p></li>
+<li><p><code class="todo">[האם יבוצע סקר נגישות חיצוני, ומתי]</code></p></li>
+<li><p><code class="todo">[מועד יעד להנגשת האפליקציות]</code></p></li>
+<li><p><code class="todo">[האם יוצע שירות תיאום הנגשה פרטני]</code></p></li>
+<li><p>הקמת תיבת <code>support@joey-go.com</code> בפועל</p></li>
+</ol>
+<h3>שאלה לעורך הדין, לא פריט למילוי</h3>
+<ol>
+<li><p>🔴 <strong><code class="todo">[האם היקף חובת הנגישות משתנה לפי גודל העוסק]</code></strong> — התקנות מדרגות חובות מסוימות לפי גודל העוסק ומחזור, וקובעות מועדים שונים. השאלה נוגעת גם לאתר וגם לאפליקציות, ובפרט <strong>האם נדרש סקר נגישות ע&quot;י מוסמך נגישות</strong> (פריט 5) או שדי בהנגשה עצמית ובהצהרה. <strong>זו שאלה משפטית ולא החלטה עסקית</strong> — להעביר לעורך הדין יחד עם שאר המסמכים.</p></li>
+</ol>
+  </article>
+</main>
+
+<footer>
+  <p>תיבת הדואר <strong>support@joey-go.com</strong> טרם הוקמה — דואר שיישלח אליה כרגע לא יגיע.</p>
+  <p><a href="accessibility.he.html">הצהרת נגישות</a></p>
+  <p>&copy; Joey · joey-go.com</p>
+</footer>
+</body>
+</html>

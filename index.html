@@ -8,35 +8,71 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- WCAG 2.0 2.4.1 (Level A). Two labels, because this page is bilingual and
+     a keyboard user reaches this link before any language context. -->
+<a class="skip" href="#main">דלג לתוכן הראשי <span lang="en" dir="ltr">/ Skip to main content</span></a>
 <header class="bar">
   <a class="brand" href="./">Joey</a>
 </header>
 
-<main>
-  <h1>Joey</h1>
-  <p class="lead">אפליקציית הסעות ומשלוחים לשוק הישראלי. נוסעים מזמינים נסיעה או משלוח מהאפליקציה, ונהגים מורשים מקבלים את הבקשה ומבצעים אותה.</p>
-  <p class="lead" lang="en" dir="ltr">Joey is a ride-hailing and delivery app for the Israeli market. Riders request a ride or a delivery from the app; approved drivers receive and fulfil it.</p>
+<main id="main" tabindex="-1">
+  <div class="hero">
+    <h1>Joey</h1>
+    <div class="i18n" lang="he" dir="rtl">
+      <p class="lead">אפליקציית הסעות ומשלוחים לשוק הישראלי. נוסעים מזמינים נסיעה או משלוח מהאפליקציה, ונהגים מורשים מקבלים את הבקשה ומבצעים אותה.</p>
+    </div>
+    <div class="i18n" lang="en" dir="ltr">
+      <p class="lead">Joey is a ride-hailing and delivery app for the Israeli market. Riders request a ride or a delivery from the app; approved drivers receive and fulfil it.</p>
+    </div>
+  </div>
 
   <div class="draft" role="note">
-    <strong>המסמכים כאן הם טיוטות שטרם עברו בדיקה משפטית</strong>
-    <p>הם מפורסמים כדי שיהיה להם כתובת קבועה, ואינם מסמכים מחייבים. <span lang="en" dir="ltr">These documents are drafts, not yet reviewed by a lawyer, and are not binding.</span></p>
+    <div class="i18n" lang="he" dir="rtl">
+      <strong>המסמכים כאן הם טיוטות שטרם עברו בדיקה משפטית</strong>
+      <p>הם מפורסמים כדי שתהיה להם כתובת קבועה, ואינם מסמכים מחייבים.</p>
+    </div>
+    <div class="i18n" lang="en" dir="ltr">
+      <strong>These documents are drafts, not yet reviewed by a lawyer</strong>
+      <p>They are published so they have a stable address. They are not binding.</p>
+    </div>
   </div>
 
   <h2>מסמכים · Documents</h2>
   <ul class="docs">
-    <li><a href="privacy.he.html">מדיניות פרטיות</a> <span class="sep">·</span> <a href="privacy.en.html" lang="en" dir="ltr">Privacy Policy</a></li>
-    <li><a href="terms.he.html">תנאי שימוש</a> <span class="sep">·</span> <a href="terms.en.html" lang="en" dir="ltr">Terms of Service</a></li>
+    <li><div class="card">
+      <a href="privacy.he.html" lang="he" dir="rtl">מדיניות פרטיות</a>
+      <a class="en" href="privacy.en.html" lang="en" dir="ltr">Privacy Policy</a>
+    </div></li>
+    <li><div class="card">
+      <a href="terms.he.html" lang="he" dir="rtl">תנאי שימוש</a>
+      <a class="en" href="terms.en.html" lang="en" dir="ltr">Terms of Service</a>
+    </div></li>
+    <li><div class="card">
+      <a href="accessibility.he.html" lang="he" dir="rtl">הצהרת נגישות</a>
+      <a class="en" href="accessibility.en.html" lang="en" dir="ltr">Accessibility Statement</a>
+    </div></li>
   </ul>
 
   <h2>תמיכה · Support</h2>
-  <p><a href="mailto:support@joey-go.com">support@joey-go.com</a></p>
+  <p class="support"><a href="mailto:support@joey-go.com">support@joey-go.com</a></p>
   <div class="draft" role="note">
-    <strong>התיבה טרם הוקמה</strong>
-    <p>דואר שיישלח ל-support@joey-go.com כרגע <strong>לא יגיע</strong>. <span lang="en" dir="ltr">This mailbox is not set up yet — mail sent to it will not arrive.</span></p>
+    <div class="i18n" lang="he" dir="rtl">
+      <strong>התיבה טרם הוקמה</strong>
+      <p>דואר שיישלח ל-support@joey-go.com כרגע <strong>לא יגיע</strong>.</p>
+    </div>
+    <div class="i18n" lang="en" dir="ltr">
+      <strong>This mailbox is not set up yet</strong>
+      <p>Mail sent to support@joey-go.com will <strong>not arrive</strong> at present.</p>
+    </div>
   </div>
 </main>
 
 <footer>
+  <p>
+    <a href="accessibility.he.html" lang="he" dir="rtl">הצהרת נגישות</a>
+    <span class="sep" aria-hidden="true">·</span>
+    <a href="accessibility.en.html" lang="en" dir="ltr">Accessibility statement</a>
+  </p>
   <p>&copy; Joey · joey-go.com</p>
 </footer>
 </body>
