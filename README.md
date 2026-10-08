@@ -35,5 +35,3 @@ Remove it after legal review.
 
 GitHub Pages: **main branch, / (root)**. Custom domain and the Namecheap DNS
 records are documented in `SITE_DEPLOY.md` in the joey-app repo.
-
-The `support@joey-go.com` mailbox referenced by these documents is **not set up yet**.
