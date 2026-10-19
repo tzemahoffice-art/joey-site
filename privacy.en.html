@@ -82,6 +82,30 @@
 <li><p>Records of driver-approval decisions and the reasons for them</p></li>
 <li><p>Basic app usage/error logs</p></li>
 </ul>
+<h3>2.6 If you send a delivery — the recipient's details</h3>
+<p>When you book a delivery, you give us <strong>the name and phone number of the person receiving the package</strong>, so the courier can hand it over. That person has not signed up to Joey, has not agreed to this policy, and has no way to ask us to delete anything themselves — so we treat their details differently from yours:</p>
+<ul>
+<li><p><strong>Use:</strong> only to deliver that package. The name and phone number are shown to the courier carrying it out and are used for nothing else — no marketing, no later contact.</p></li>
+<li><p><strong>Automatic deletion after 30 days:</strong> 30 days after the delivery is completed or cancelled, the recipient's name and phone number are <strong>deleted</strong> from the record. The delivery record itself (addresses, price, times) is kept like any ride — only the recipient's details are removed. The 30 days exist so that a delivery that went wrong can be looked into.</p></li>
+<li><p><strong>This deletion does not depend on your account</strong> — it happens whether your account stays open or you delete it.</p></li>
+<li><p><strong>Before you give us someone else's details,</strong> make sure they are expecting the delivery and do not object to the courier having their phone number.</p></li>
+</ul>
+<h3>2.7 A photo of the package, when the courier reports it is bigger than declared</h3>
+<p>If the courier arrives for pickup and finds the package is bigger than the size that was chosen, they <strong>must photograph it</strong> before reporting it. The photo has one purpose: so you can see what it is about before you approve a new price or decline, and so we can look into a complaint if there is one.</p>
+<ul>
+<li><p><strong>Who sees it:</strong> you (the sender), the courier who took it, and Joey staff when handling an inquiry or a complaint. It is shown to no one else and used for nothing else.</p></li>
+<li><p><strong>What it may show:</strong> a photo of a package may show <strong>a label with a name and address</strong> — yours or the recipient's. We ask couriers to photograph the package only.</p></li>
+<li><p><strong>Deletion after 30 days:</strong> 30 days after the delivery is completed or cancelled, we begin deleting the photo and complete it without delay — for the same reason as the recipient's details (§2.6). The 30 days exist so that a delivery that went wrong can be looked into.</p></li>
+</ul>
+<p><code class="todo">[LAWYER / JOEY OWNERS: the wording &quot;begin deleting and complete it without delay&quot; is deliberate — as at the date of this draft the deletion itself is triggered by hand from the admin panel, with a visible alert the moment a single photo passes 30 days (the same mechanism decided for driver documents). If this document commits to &quot;deleted within 30 days&quot;, first confirm the deletion runs automatically]</code></p>
+<h3>2.8 Requests to the Joey team (in-app support chat)</h3>
+<p>When you write to us through &quot;Chat with us&quot; in the app, we keep your messages, the team's replies, and when each message was sent.</p>
+<ul>
+<li><p><strong>Who sees it:</strong> you, and the Joey staff who handle requests. Staff may also see your recent rides, so they can answer a request about a ride or a charge. We record internally which staff member replied, but do not show you their details.</p></li>
+<li><p><strong>Use:</strong> only to handle your request — not for marketing.</p></li>
+<li><p><strong>Notification:</strong> when the team replies, you get a notification on your phone. <strong>It does not include the text of the reply</strong>, because notifications are also shown on a locked screen.</p></li>
+<li><p><strong>Deletion:</strong> all your support conversations are deleted outright when you delete your account (see §7). <strong>This is different from ride chat</strong> with a driver or rider, which is kept — a support conversation has no other party who needs the record.</p></li>
+</ul>
 <h2>3. Location — how it actually works today</h2>
 <p><strong>Riders:</strong> your location is used to set your pickup point and to show your driver's live location while a ride is in progress. It is not tracked when you're not actively planning or on a ride.</p>
 <p><strong>Drivers:</strong> while you are online (available for ride requests) or on an active ride, the app records your current GPS location so we can match you with nearby ride requests and so a rider on an active ride can see your live position. This location is stored as a <strong>current-state value only</strong> — the database keeps only your most recent location, not a historical trail of everywhere you've been. Riders can only see a driver's location during a ride they are actually matched to.</p>
@@ -129,6 +153,7 @@
 <li><p>Your name, phone number, email address, and profile photo.</p></li>
 <li><p>Your saved payment card details, emergency contacts, and push-notification token — deleted outright.</p></li>
 <li><p>The last device location we held for you.</p></li>
+<li><p><strong>All your support conversations with the Joey team</strong> — your messages and the team's. <strong>Unlike ride chat</strong> (item 4 below), support conversations are not kept (see §2.8).</p></li>
 <li><p><strong>If you are a driver:</strong> the documents you uploaded (ID card, driving licence, selfie, vehicle photo) are deleted from storage; your driving licence categories are deleted; and your vehicle registration number and model are removed from your driver record.</p></li>
 </ul>
 <p><code class="todo">[LAWYER / JOEY OWNERS: if this document commits to a fixed window for completing deletion (e.g. &quot;within 30 days&quot;), confirm with the technical team that deletion of driver document files runs automatically rather than being triggered by hand — as at the date of this draft the mechanism exists and is tested, but is triggered manually]</code></p></li>
@@ -149,6 +174,9 @@
 <ul>
 <li><p><strong>While your account is active:</strong> for as long as you keep using Joey.</p></li>
 <li><p><strong>Ride, payment, and transaction records:</strong> kept for <code class="todo">[FINANCIAL RECORD RETENTION PERIOD — a legal/accounting decision, commonly several years under Israeli tax and accounting requirements; do not publish this policy with this value still blank]</code>, even after an account is deleted (see §7).</p></li>
+<li><p><strong>A delivery recipient's name and phone number:</strong> <strong>30 days</strong> after the delivery is completed or cancelled — then deleted automatically (see §2.6).</p></li>
+<li><p><strong>A package photo taken by the courier:</strong> <strong>30 days</strong> after the delivery is completed or cancelled — then we begin deleting it and complete it without delay (see §2.7).</p></li>
+<li><p><strong>Support conversations with the Joey team:</strong> for as long as the account exists — and deleted outright when the account is deleted (see §2.8, §7). <code class="todo">[LAWYER / JOEY OWNERS: whether to also set a maximum retention period for closed conversations of an active account]</code></p></li>
 <li><p><strong>Identity documents (drivers):</strong> <code class="todo">[RETENTION PERIOD FOR DRIVER DOCUMENTS — legal/business decision]</code>.</p></li>
 <li><p><strong>SOS alerts and safety-incident records:</strong> <code class="todo">[RETENTION PERIOD — legal/business decision, likely needs to be long enough to support any resulting investigation or legal process]</code>.</p></li>
 </ul>
@@ -187,6 +215,7 @@
 <li><p><strong>Confirm the current cancellation-fee amount</strong> (₪15 assumed, §6) is still accurate before publishing</p></li>
 <li><p><strong>Legal determination: whether retaining addresses, messages and comments after account deletion qualifies as &quot;anonymisation&quot;</strong> (§7.4) — added 10/09/2026, after checking in the code exactly what survives deletion</p></li>
 <li><p><strong>If this document commits to a window for completing deletion, confirm that deletion of driver document files is automated</strong> (§7.3) — added 10/09/2026</p></li>
+<li><p><strong>Retention period for closed support conversations of an active account</strong> (§8) — added 10/10/2026. Today they are kept until the account is deleted</p></li>
 <li><p><strong>Update §3 (Location) before Phase 2 of <code>BACKGROUND_LOCATION_PLAN.md</code></strong> (repo root) — not once the feature ships to production, but as soon as a real user is shown the &quot;Always&quot; permission request during internal testing. Not a legal decision, a required technical/compliance update, flagged so it isn't forgotten</p></li>
 </ol>
   </article>
