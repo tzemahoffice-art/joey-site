@@ -3,67 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Joey</title>
+<title>Joey — נסיעות ומשלוחים בישראל</title>
+<meta name="description" content="Joey היא אפליקציה להזמנת מוניות, ואנים לקבוצות ומשלוחים בישראל. המחיר מוצג לפני ההזמנה, והתשלום בכרטיס אשראי דרך האפליקציה.">
+<link rel="icon" href="logo.png">
+<link rel="alternate" hreflang="en" href="https://joey-go.com/en.html">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<!-- WCAG 2.0 2.4.1 (Level A). Two labels, because this page is bilingual and
-     a keyboard user reaches this link before any language context. -->
-<a class="skip" href="#main">דלג לתוכן הראשי <span lang="en" dir="ltr">/ Skip to main content</span></a>
+<body class="home">
+<a class="skip" href="#main">דלג לתוכן הראשי</a>
 <header class="bar">
-  <a class="brand" href="./">Joey</a>
+  <a class="brand" href="./"><img src="logo.png" alt="" width="28" height="28"> Joey</a>
+  <nav>
+    <a href="#services">שירותים</a>
+    <a href="#how">איך זה עובד</a>
+    <a href="#drivers">לנהגים</a>
+    <a href="#company">החברה</a>
+    <a href="en.html" lang="en" dir="ltr" hreflang="en">English</a>
+  </nav>
 </header>
 
 <main id="main" tabindex="-1">
-  <div class="hero">
-    <h1>Joey</h1>
-    <div class="i18n" lang="he" dir="rtl">
-      <p class="lead">אפליקציית הסעות ומשלוחים לשוק הישראלי. נוסעים מזמינים נסיעה או משלוח מהאפליקציה, ונהגים מורשים מקבלים את הבקשה ומבצעים אותה.</p>
-    </div>
-    <div class="i18n" lang="en" dir="ltr">
-      <p class="lead">Joey is a ride-hailing and delivery app for the Israeli market. Riders request a ride or a delivery from the app; approved drivers receive and fulfil it.</p>
-    </div>
-  </div>
+  <section class="home-hero">
+    <h1>נסיעות ומשלוחים, באפליקציה אחת</h1>
+    <p class="lead">מזמינים מונית, ואן לקבוצה או שליח לחבילה — ונהג מאושר בסביבה מקבל את הבקשה. המחיר מוצג לפני ההזמנה, והתשלום בכרטיס האשראי, דרך האפליקציה.</p>
+    <p class="cta">
+      <a class="btn" href="#drivers">מידע לנהגים</a>
+      <a class="btn btn-ghost" href="#company">צרו קשר</a>
+    </p>
+  </section>
 
-  <div class="draft" role="note">
-    <div class="i18n" lang="he" dir="rtl">
-      <strong>המסמכים כאן הם טיוטות שטרם עברו בדיקה משפטית</strong>
-      <p>הם מפורסמים כדי שתהיה להם כתובת קבועה, ואינם מסמכים מחייבים.</p>
-    </div>
-    <div class="i18n" lang="en" dir="ltr">
-      <strong>These documents are drafts, not yet reviewed by a lawyer</strong>
-      <p>They are published so they have a stable address. They are not binding.</p>
-    </div>
-  </div>
+  <section id="services" class="home-section">
+    <h2>השירותים</h2>
+    <ul class="tiles">
+      <li class="tile"><h3>מונית</h3><p>מוניות מורשות, עד 4 נוסעים. המחיר נקבע במונה המונית לפי צו הפיקוח על המחירים; לפני ההזמנה מוצגת הערכה.</p></li>
+      <li class="tile"><h3>ואן לקבוצה</h3><p>ואנים ל-8, 13 ו-16 נוסעים. מחיר קבוע עד 15 ק״מ, שמוצג לפני ההזמנה — וזה המחיר שתשלמו.</p></li>
+      <li class="tile"><h3>משלוח</h3><p>חבילה קטנה, בינונית או גדולה, החל מ-₪30. המחיר סופי ומוצג מראש. את פרטי המקבל רואה רק השליח שמבצע את המשלוח.</p></li>
+    </ul>
+  </section>
 
-  <h2>מסמכים · Documents</h2>
-  <ul class="docs">
-    <li><div class="card">
-      <a href="privacy.he.html" lang="he" dir="rtl">מדיניות פרטיות</a>
-      <a class="en" href="privacy.en.html" lang="en" dir="ltr">Privacy Policy</a>
-    </div></li>
-    <li><div class="card">
-      <a href="terms.he.html" lang="he" dir="rtl">תנאי שימוש</a>
-      <a class="en" href="terms.en.html" lang="en" dir="ltr">Terms of Service</a>
-    </div></li>
-    <li><div class="card">
-      <a href="accessibility.he.html" lang="he" dir="rtl">הצהרת נגישות</a>
-      <a class="en" href="accessibility.en.html" lang="en" dir="ltr">Accessibility Statement</a>
-    </div></li>
-  </ul>
+  <section id="how" class="home-section">
+    <h2>איך זה עובד</h2>
+    <ol class="steps">
+      <li><h3>בוחרים לאן</h3><p>כתובת איסוף ויעד — או כתובת מהיסטוריית הנסיעות.</p></li>
+      <li><h3>בוחרים רכב או גודל חבילה</h3><p>ורואים את המחיר והמסלול על המפה לפני שמזמינים.</p></li>
+      <li><h3>נהג מאושר מקבל את הבקשה</h3><p>ואתם רואים אותו מתקרב בזמן אמת, עם שם, רכב ודירוג.</p></li>
+      <li><h3>משלמים ומדרגים</h3><p>החיוב בכרטיס השמור בסיום, ושני הצדדים מדרגים זה את זה.</p></li>
+    </ol>
+  </section>
 
-  <h2>תמיכה · Support</h2>
-  <p class="support"><a href="mailto:support@joey-go.com">support@joey-go.com</a></p>
+  <section class="home-section">
+    <h2>בטיחות ואמון</h2>
+    <ul class="tiles tiles-4">
+      <li class="tile"><h3>נהגים שנבדקו</h3><p>כל נהג מעלה תעודת זהות, רישיון נהיגה ורישיון רכב, ומקבל נסיעות רק אחרי אישור.</p></li>
+      <li class="tile"><h3>כפתור מצוקה</h3><p>בכל נסיעה פעילה — אצל הנוסע וגם אצל הנהג.</p></li>
+      <li class="tile"><h3>קשר בזמן הנסיעה</h3><p>שיחה וצ׳אט עם הנהג. מספרי הטלפון נגישים רק בזמן נסיעה פעילה.</p></li>
+      <li class="tile"><h3>תשלום בכרטיס בלבד</h3><p>בלי מזומן — החיוב שקוף ומופיע בהיסטוריית הנסיעות.</p></li>
+    </ul>
+  </section>
+
+  <section id="drivers" class="home-section home-band">
+    <h2>לנהגים</h2>
+    <p>נהגי מוניות ובעלי ואנים בעלי רישיון מתאים יכולים להצטרף ל-Joey: נרשמים באפליקציית הנהגים, בוחרים סוג רכב, מעלים את המסמכים — ואחרי אישור מתחילים לקבל בקשות מנוסעים ומשולחים בסביבה. התשלום מהנוסע עובר דרך האפליקציה.</p>
+    <p>שאלות על הצטרפות: <a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a></p>
+  </section>
+
+  <section id="company" class="home-section">
+    <h2>החברה</h2>
+    <p>Joey מופעלת על ידי <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi></p>
+    <div class="company-card">
+      <p><span class="label">כתובת</span> ניסנבוים 25/4, נתניה 4247261, ישראל</p>
+      <p><span class="label">יצירת קשר</span> <a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a></p>
+      
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2>מסמכים</h2>
+    <ul class="doclinks">
+      <li><a href="privacy.he.html">מדיניות פרטיות</a></li>
+      <li><a href="terms.he.html">תנאי שימוש</a></li>
+      <li><a href="accessibility.he.html">הצהרת נגישות</a></li>
+    </ul>
+  </section>
 </main>
 
 <footer>
-  <p>
-    <a href="accessibility.he.html" lang="he" dir="rtl">הצהרת נגישות</a>
-    <span class="sep" aria-hidden="true">·</span>
-    <a href="accessibility.en.html" lang="en" dir="ltr">Accessibility statement</a>
-  </p>
-  <p>&copy; Joey · <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi> · joey-go.com</p>
+  <p>&copy; 2026 <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi> · ניסנבוים 25/4, נתניה 4247261, ישראל</p>
+  <p><a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a> · <a href="privacy.he.html">מדיניות פרטיות</a> · <a href="terms.he.html">תנאי שימוש</a> · <a href="accessibility.he.html">הצהרת נגישות</a></p>
 </footer>
 </body>
 </html>

@@ -360,3 +360,125 @@ code.todo {
   article li, article p { page-break-inside: avoid; }
   a { color: #000; }
 }
+
+/* ---------- home page (STATUS.md §259) ----------
+   The documents keep the narrow reading measure; the home page is wider and
+   built from sections. Same tokens, same accent — the app's own colour. */
+body.home main { max-width: 64rem; padding-top: 0; }
+body.home footer { max-width: 64rem; }
+.home .brand::before { display: none; }
+.home .brand img { border-radius: 7px; display: block; }
+
+.home-hero {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+.home-hero h1 {
+  font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  letter-spacing: -0.01em;
+}
+.home-hero .lead {
+  font-size: 1.15rem;
+  color: var(--fg-soft);
+  max-width: 40rem;
+  margin: 0 0 1.75rem;
+}
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; }
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  background: var(--accent-strong);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn:hover { color: #fff; filter: brightness(1.08); }
+.btn-ghost {
+  background: transparent;
+  color: var(--accent-strong);
+  box-shadow: inset 0 0 0 1.5px var(--accent-strong);
+}
+.btn-ghost:hover { color: var(--accent-strong); background: var(--accent-wash); }
+@media (prefers-color-scheme: dark) {
+  .btn { color: #0f1214; }
+  .btn:hover { color: #0f1214; }
+}
+
+.home-section { padding: 2.5rem 0 0.5rem; scroll-margin-top: 4.5rem; }
+.home-section h2 { font-size: 1.45rem; margin: 0 0 1.1rem; }
+.home-section h3 { font-size: 1.05rem; margin: 0 0 0.35rem; }
+.home-section p { margin: 0 0 0.6rem; }
+
+.tiles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.tile {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.2rem;
+}
+.tile p { color: var(--fg-soft); margin: 0; }
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  counter-reset: step;
+}
+.steps li { counter-increment: step; padding-top: 2.6rem; position: relative; }
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent-wash);
+  color: var(--accent-strong);
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+.steps p { color: var(--fg-soft); margin: 0; }
+
+.home-band {
+  margin-top: 2.5rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--accent-wash);
+  border-radius: var(--radius);
+}
+
+.company-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  max-width: 34rem;
+}
+.company-card p { margin: 0.3rem 0; }
+.label { color: var(--muted); margin-inline-end: 0.4rem; }
+
+.doclinks { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+
+/* Phone width: the section links would overflow the bar -- only the
+   language switch stays; the sections are a scroll away anyway. */
+@media (max-width: 640px) {
+  .home .bar nav a:not([hreflang]) { display: none; }
+  .home-hero { padding-top: 2.25rem; }
+}
+/* Four cards: two by two on wide screens, never three plus an orphan. */
+@media (min-width: 641px) {
+  .tiles-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
