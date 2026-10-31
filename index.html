@@ -3,93 +3,126 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Joey — נסיעות ומשלוחים בישראל</title>
-<meta name="description" content="Joey היא אפליקציה להזמנת מוניות, ואנים לקבוצות ומשלוחים בישראל. המחיר מוצג לפני ההזמנה, והתשלום בכרטיס אשראי דרך האפליקציה.">
+<title>Joey — נסיעות, ואנים ומשלוחים בישראל</title>
+<meta name="description" content="Joey היא אפליקציה להזמנת מוניות, ואנים לקבוצות ומשלוחים בישראל. המסלול והמחיר מוצגים לפני ההזמנה, והתשלום בכרטיס אשראי דרך האפליקציה.">
+<meta name="theme-color" content="#06070A">
 <link rel="icon" href="logo.png">
+<link rel="canonical" href="https://joey-go.com/">
 <link rel="alternate" hreflang="en" href="https://joey-go.com/en.html">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
 </head>
-<body class="home">
+<body class="site">
 <a class="skip" href="#main">דלג לתוכן הראשי</a>
-<header class="bar">
-  <a class="brand" href="./"><img src="logo.png" alt="" width="28" height="28"> Joey</a>
-  <nav>
+<header class="topnav">
+  <a class="brand" href="./"><img src="logo.png" alt="" width="34" height="34"> Joey</a>
+  <nav class="links" aria-label="ניווט ראשי">
     <a href="#services">שירותים</a>
     <a href="#how">איך זה עובד</a>
-    <a href="#drivers">לנהגים</a>
-    <a href="#company">החברה</a>
-    <a href="en.html" lang="en" dir="ltr" hreflang="en">English</a>
+    <a href="#safety">בטיחות</a>
+    <a href="drivers.html">לנהגים</a>
   </nav>
+  <span class="spacer"></span>
+  <a class="lang" href="en.html" lang="en" dir="ltr" hreflang="en">English</a>
+  <a class="btn btn-primary btn-sm" href="drivers.html">הצטרפו כנהג</a>
 </header>
-
 <main id="main" tabindex="-1">
-  <section class="home-hero">
-    <h1>נסיעות ומשלוחים, באפליקציה אחת</h1>
-    <p class="lead">מזמינים מונית, ואן לקבוצה או שליח לחבילה — ונהג מאושר בסביבה מקבל את הבקשה. המחיר מוצג לפני ההזמנה, והתשלום בכרטיס האשראי, דרך האפליקציה.</p>
-    <p class="cta">
-      <a class="btn" href="#drivers">מידע לנהגים</a>
-      <a class="btn btn-ghost" href="#company">צרו קשר</a>
-    </p>
-  </section>
+<section class="hero">
+  <div class="photo" role="img" aria-label="יד של נהג על ההגה בלילה"></div>
+  <div class="fade"></div>
+  <div class="glow"></div>
+  <svg class="route" viewBox="0 0 1440 820" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#3B82F6" stop-opacity=".15"/><stop offset=".5" stop-color="#3B82F6" stop-opacity=".9"/><stop offset="1" stop-color="#7DB3FF" stop-opacity=".3"/></linearGradient></defs>
+    <path d="M40 730 C 160 730, 200 640, 300 620 S 560 560, 600 420 S 640 200, 660 130" fill="none" stroke="url(#rg)" stroke-width="3.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <circle cx="40" cy="730" r="9" fill="#06070A" stroke="#3B82F6" stroke-width="4"/>
+    <g transform="translate(660 130)"><circle r="16" fill="rgba(59,130,246,.25)"/><circle r="7" fill="#7DB3FF"/></g>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><i></i>מוניות · ואנים לקבוצות · משלוחים</span>
+      <h1>נסיעה, ואן או משלוח.<br><span class="hl">באפליקציה אחת.</span></h1>
+      <p class="lead">רואים את המסלול ואת המחיר לפני שמזמינים — בוואן ובמשלוח זה המחיר הסופי, במונית הערכה והמונה קובע. נהגים שעברו אישור, ותשלום בכרטיס בלבד.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="drivers.html">הצטרפו כנהג <span aria-hidden="true">←</span></a>
+        <a class="btn btn-ghost" href="#how">איך זה עובד</a>
+      </div>
+      <div class="sos">
+        <div class="sos-icon" aria-hidden="true">SOS</div>
+        <div><b>כפתור מצוקה בכל נסיעה</b><span>אצל הנוסע וגם אצל הנהג — הקריאה נשמרת מיד ומגיעה לצוות Joey.</span></div>
+      </div>
+      <ul class="facts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg>המחיר על המסך לפני ההזמנה</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>נהגים מאושרים בלבד</li>
+      </ul>
+    </div>
+    <div class="phone-wrap"><div class="phone tilt"><div class="screen"><img src="home/app-choose-ride.jpg" alt="מסך בחירת הנסיעה באפליקציה: מסלול על המפה ומחיר לכל רכב" loading="lazy"></div></div></div>
+  </div>
+</section>
 
-  <section id="services" class="home-section">
-    <h2>השירותים</h2>
-    <ul class="tiles">
-      <li class="tile"><h3>מונית</h3><p>מוניות מורשות, עד 4 נוסעים. המחיר נקבע במונה המונית לפי צו הפיקוח על המחירים; לפני ההזמנה מוצגת הערכה.</p></li>
-      <li class="tile"><h3>ואן לקבוצה</h3><p>ואנים ל-8, 13 ו-16 נוסעים. מחיר קבוע עד 15 ק״מ, שמוצג לפני ההזמנה — וזה המחיר שתשלמו.</p></li>
-      <li class="tile"><h3>משלוח</h3><p>חבילה קטנה, בינונית או גדולה, החל מ-₪30. המחיר סופי ומוצג מראש. את פרטי המקבל רואה רק השליח שמבצע את המשלוח.</p></li>
-    </ul>
-  </section>
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 28" preserveAspectRatio="none"><line x1="14" y1="14" x2="1186" y2="14" stroke="#3B82F6" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round"/><circle cx="14" cy="14" r="6" fill="#06070A" stroke="#3B82F6" stroke-width="3"/><circle cx="1186" cy="14" r="7" fill="#7DB3FF"/></svg></div>
 
-  <section id="how" class="home-section">
-    <h2>איך זה עובד</h2>
+<section id="services" class="wrap section">
+  <p class="kicker">השירותים</p>
+  <h2>שלוש דרכים <span class="hl">להגיע.</span></h2>
+  <ul class="cards cards-3">
+    <li class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16v-5l2-5h10l2 5v5"/><path d="M3 16h18v2H3z"/><circle cx="7.5" cy="13" r="1"/><circle cx="16.5" cy="13" r="1"/><path d="M10 6V4h4v2"/></svg></div><h3>מונית</h3><p>מוניות מורשות, עד 4 נוסעים. המחיר נקבע במונה לפי צו הפיקוח על המחירים; לפני ההזמנה מוצגת הערכה.</p></li>
+    <li class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="10" rx="2"/><path d="M3 11h18M8 6v5M14 6v5"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></div><h3>ואן לקבוצה</h3><p>ואנים ל-8, 13 ו-16 נוסעים. מחיר קבוע עד 15 ק״מ, שמוצג לפני ההזמנה — וזה המחיר שתשלמו.</p></li>
+    <li class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></div><h3>משלוח</h3><p>חבילה קטנה, בינונית או גדולה. המחיר סופי ומוצג מראש, ואת פרטי המקבל רואה רק השליח שמבצע את המשלוח.</p></li>
+  </ul>
+</section>
+
+<section id="how" class="wrap section how">
+  <div>
+    <p class="kicker">איך זה עובד</p>
+    <h2>מהכתובת <span class="hl">ועד היעד.</span></h2>
     <ol class="steps">
-      <li><h3>בוחרים לאן</h3><p>כתובת איסוף ויעד — או כתובת מהיסטוריית הנסיעות.</p></li>
-      <li><h3>בוחרים רכב או גודל חבילה</h3><p>ורואים את המחיר והמסלול על המפה לפני שמזמינים.</p></li>
-      <li><h3>נהג מאושר מקבל את הבקשה</h3><p>ואתם רואים אותו מתקרב בזמן אמת, עם שם, רכב ודירוג.</p></li>
+      <li><h3>בוחרים לאן</h3><p>כתובת איסוף ויעד — או אחת מהכתובות האחרונות.</p></li>
+      <li><h3>רואים מסלול ומחיר</h3><p>על המפה, לכל רכב או גודל חבילה, לפני שמזמינים.</p></li>
+      <li><h3>נהג מאושר מקבל</h3><p>ורואים אותו מתקרב על המפה בזמן אמת, עם השם והדירוג שלו.</p></li>
       <li><h3>משלמים ומדרגים</h3><p>החיוב בכרטיס השמור בסיום, ושני הצדדים מדרגים זה את זה.</p></li>
     </ol>
-  </section>
+  </div>
+  <div class="phone-pair">
+    <div class="phone back"><div class="screen"><img src="home/app-home.jpg" alt="מסך הבית של אפליקציית Joey: מפה, בחירה בין נסיעה למשלוח, וכתובות אחרונות" loading="lazy"></div></div>
+    <div class="phone front"><div class="screen"><img src="home/app-choose-ride.jpg" alt="מסך בחירת הנסיעה באפליקציה: מסלול על המפה ומחיר לכל רכב" loading="lazy"></div></div>
+  </div>
+</section>
 
-  <section class="home-section">
-    <h2>בטיחות ואמון</h2>
-    <ul class="tiles tiles-4">
-      <li class="tile"><h3>נהגים שנבדקו</h3><p>כל נהג מעלה תעודת זהות, רישיון נהיגה ורישיון רכב, ומקבל נסיעות רק אחרי אישור.</p></li>
-      <li class="tile"><h3>כפתור מצוקה</h3><p>בכל נסיעה פעילה — אצל הנוסע וגם אצל הנהג.</p></li>
-      <li class="tile"><h3>קשר בזמן הנסיעה</h3><p>שיחה וצ׳אט עם הנהג. מספרי הטלפון נגישים רק בזמן נסיעה פעילה.</p></li>
-      <li class="tile"><h3>תשלום בכרטיס בלבד</h3><p>בלי מזומן — החיוב שקוף ומופיע בהיסטוריית הנסיעות.</p></li>
-    </ul>
-  </section>
+<section id="safety" class="wrap section">
+  <p class="kicker">בטיחות</p>
+  <h2>בנוי לנסיעה <span class="hl">בטוחה.</span></h2>
+  <div class="sos-big">
+    <div class="sos-icon sos-icon-lg" aria-hidden="true">SOS</div>
+    <div><h3>כפתור מצוקה — אצל הנוסע וגם אצל הנהג</h3><p>בכל נסיעה פעילה, בלחיצה אחת. הקריאה נשמרת מיד — עם המיקום, כשהוא ידוע — ומגיעה לצוות Joey — וגם אם האפליקציה נסגרת שנייה אחרי הלחיצה, היא כבר אצלנו.</p></div>
+  </div>
+  <ul class="cards cards-3">
+    <li class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>נהגים שנבדקו</h3><p>כל נהג מעלה תעודת זהות, רישיון נהיגה, רישיון רכב ותמונת רכב, ומקבל נסיעות רק אחרי שצוות Joey אישר.</p></li>
+    <li class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div><h3>קשר בזמן הנסיעה</h3><p>שיחה וצ׳אט עם הנהג. מספרי הטלפון נגישים רק כל עוד הנסיעה פעילה.</p></li>
+    <li class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div><h3>כרטיס בלבד</h3><p>בלי מזומן. כל חיוב שקוף ומופיע בהיסטוריית הנסיעות.</p></li>
+  </ul>
+</section>
 
-  <section id="drivers" class="home-section home-band">
-    <h2>לנהגים</h2>
-    <p>נהגי מוניות ובעלי ואנים בעלי רישיון מתאים יכולים להצטרף ל-Joey: נרשמים באפליקציית הנהגים, בוחרים סוג רכב, מעלים את המסמכים — ואחרי אישור מתחילים לקבל בקשות מנוסעים ומשולחים בסביבה. התשלום מהנוסע עובר דרך האפליקציה.</p>
-    <p>שאלות על הצטרפות: <a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a></p>
-  </section>
-
-  <section id="company" class="home-section">
-    <h2>החברה</h2>
-    <p>Joey מופעלת על ידי <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi></p>
-    <div class="company-card">
-      <p><span class="label">כתובת</span> ניסנבוים 25/4, נתניה 4247261, ישראל</p>
-      <p><span class="label">יצירת קשר</span> <a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a></p>
-      
+<section class="wrap section">
+  <div class="band">
+    <div>
+      <p class="kicker">לנהגים</p>
+      <h2>נוהגים? הצטרפו אלינו.</h2>
+      <p class="band-body">נהגי מוניות ובעלי ואנים עם רישיון מתאים: נרשמים באפליקציית הנהגים, מעלים מסמכים, ואחרי אישור — הצעות נסיעה מגיעות ישר לטלפון.</p>
+      <a class="btn btn-primary" href="drivers.html">כל המידע לנהגים <span aria-hidden="true">←</span></a>
     </div>
-  </section>
-
-  <section class="home-section">
-    <h2>מסמכים</h2>
-    <ul class="doclinks">
-      <li><a href="privacy.he.html">מדיניות פרטיות</a></li>
-      <li><a href="terms.he.html">תנאי שימוש</a></li>
-      <li><a href="accessibility.he.html">הצהרת נגישות</a></li>
-    </ul>
-  </section>
+    <img class="push" src="home/offer-push.png" alt="התראת הצעת נסיעה בטלפון של נהג: &quot;הצעת נסיעה חדשה — איסוף 0.8 ק״מ ממך&quot;" loading="lazy" width="760" height="234" lang="he">
+  </div>
+</section>
 </main>
-
-<footer>
-  <p>&copy; 2026 <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi> · ניסנבוים 25/4, נתניה 4247261, ישראל</p>
-  <p><a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a> · <a href="privacy.he.html">מדיניות פרטיות</a> · <a href="terms.he.html">תנאי שימוש</a> · <a href="accessibility.he.html">הצהרת נגישות</a></p>
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 28" preserveAspectRatio="none"><line x1="14" y1="14" x2="1186" y2="14" stroke="#3B82F6" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round"/><circle cx="14" cy="14" r="6" fill="#06070A" stroke="#3B82F6" stroke-width="3"/><circle cx="1186" cy="14" r="7" fill="#7DB3FF"/></svg></div>
+<!-- The company's name and address: Apple requires them; Orel, 31/10/2026:
+     at the bottom only, small, like Gett and Uber -- not a section mid-page. -->
+<footer id="contact" class="site-footer">
+  <div class="footer-top">
+    <a class="brand" href="./"><img src="logo.png" alt="" width="28" height="28"> Joey</a>
+    <p class="footer-contact"><span class="label">יצירת קשר</span> <a href="mailto:support@joey-go.com"><bdi dir="ltr">support@joey-go.com</bdi></a></p>
+  </div>
+  <p class="footer-docs"><a href="privacy.he.html">מדיניות פרטיות</a><span aria-hidden="true"> · </span><a href="terms.he.html">תנאי שימוש</a><span aria-hidden="true"> · </span><a href="accessibility.he.html">הצהרת נגישות</a></p>
+  <p class="footer-legal">&copy; 2026 <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi> · טום לנטוס 60, נתניה, ישראל</p>
 </footer>
 </body>
 </html>
