@@ -137,7 +137,10 @@ main:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  /* §307: at 320px (a phone with large text) the links wrap instead of
+     scrolling sideways -- WCAG 1.4.10. */
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   padding: 0.85rem 1.25rem;
   border-bottom: 1px solid var(--line);
   position: sticky;
@@ -166,7 +169,7 @@ main:focus {
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   flex: none;
 }
-.bar nav { display: flex; gap: 0.35rem; }
+.bar nav { display: flex; flex-wrap: wrap; gap: 0.35rem; min-width: 0; }
 .bar nav a {
   font-size: 0.9rem;
   text-decoration: none;
