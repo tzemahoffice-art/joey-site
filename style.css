@@ -324,6 +324,9 @@ code {
   padding: 0.1em 0.35em;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.875em;
+  /* §307: a long token ("accepted/arriving/in_progress") may break, or a
+     phone at 320px scrolls sideways (WCAG 1.4.10; caught on Linux fonts). */
+  overflow-wrap: anywhere;
 }
 
 /* An unresolved [bracketed] decision. Deliberately loud: a reader must be
