@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>הסכם נהג · Joey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- WCAG 2.0 2.4.1 Bypass Blocks (Level A): the header repeats on every page,
+     so a keyboard user gets a way past it. Hidden until focused. -->
+<a class="skip" href="#main">דלג לתוכן הראשי</a>
+<header class="bar">
+  <a class="brand" href="./">Joey</a>
+  <nav>
+    <a href="./">דף הבית</a>
+    <a href="accessibility.he.html">הצהרת נגישות</a>
+    <!-- 3.1.2 Language of Parts (AA): this link's own text is in the other
+         language, so it is marked as such rather than inheriting the page's. -->
+    <a href="driver-agreement.en.html" lang="en" dir="ltr" hreflang="en">English</a>
+  </nav>
+</header>
+
+<!-- tabindex="-1" so the skip link actually moves focus, not just the
+     viewport: without it some browsers scroll and leave focus behind. -->
+<main id="main" tabindex="-1">
+  <div class="draft" role="note">
+    <strong>טיוטה — טרם עברה בדיקה משפטית</strong>
+    <p>המסמך הזה נכתב על בסיס מה שהאפליקציה עושה בפועל, אך <strong>טרם נבדק על ידי עורך דין ואינו מסמך מחייב</strong>. כל טקסט המופיע <code class="todo">[בסוגריים מרובעים]</code> הוא החלטה משפטית או עסקית שטרם התקבלה.</p>
+  </div>
+
+  <article>
+<h1>Joey — הסכם נהג</h1>
+<blockquote><p><strong>נוסח ממתין לאישור משפטי.</strong> זהו מציין מקום, לא הסכם. הנוסח של הסכם הנהג נכתב בימים אלה על ידי עורך הדין של החברה, ויפורסם בעמוד הזה לפני השקת השירות. עד אז אין לראות בעמוד הזה הסכם מחייב.</p></blockquote>
+<p><strong>גרסה:</strong> <code>draft-2026-11-08</code> (מציין מקום)</p>
+<hr>
+<h2>מה יופיע כאן</h2>
+<p>ההסכם בין נהג לבין ⁦Y.A.R. Zemach Holdings Ltd.⁩ (ח.פ. 515594190), שמפעילה את Joey. הוא יסדיר, בין היתר, את מעמד הנהג, את הגבייה והעמלה החודשית, את ההתחשבנות, את הביטוח והאחריות, את ההשעיה והסיום, ואת הפרטיות.</p>
+<p>כשהנוסח הסופי יפורסם, כל נהג יתבקש באפליקציה לקרוא אותו ולאשר אותו מחדש לפני שימשיך לקבל נסיעות.</p>
+<p>שאלות: <a href="mailto:support@joey-go.com">support@joey-go.com</a></p>
+  </article>
+</main>
+
+<footer>
+  <p><a href="mailto:support@joey-go.com">support@joey-go.com</a></p>
+  <p><a href="accessibility.he.html">הצהרת נגישות</a></p>
+  <p>&copy; Joey · <bdi lang="en" dir="ltr">Y.A.R. Zemach Holdings Ltd.</bdi> · joey-go.com</p>
+</footer>
+</body>
+</html>
