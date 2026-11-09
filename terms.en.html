@@ -96,8 +96,8 @@
 <p>Riders and drivers may rate each other after a completed ride. Ratings are used to maintain service quality and may factor into account review decisions. <code class="todo">[Confirm whether/how a rating threshold affects account status — not currently automated in the app; ratings are recorded and displayed but do not currently trigger any automatic account action.]</code></p>
 <h2>11. In-app communication and safety features</h2>
 <ul>
-<li><p><strong>Sending</strong> messages to your matched rider/driver is possible only while a ride is in an active state (accepted through in-progress) — not before a match is made, and not after the ride ends.</p></li>
-<li><p><strong>Reading the conversation, however, is not time-limited:</strong> both parties to a ride continue to see their exchange after the ride has ended. Message content is also <strong>retained after account deletion</strong> — see Privacy Policy §7.4. <code class="todo">[Corrected 10/09/2026 against the actual code: the previous wording said chat is available &quot;not after the ride ends&quot;, which is true only of sending. The database read permissions are not conditioned on ride status at all.]</code></p></li>
+<li><p><strong>Sending messages</strong> to your matched driver or rider is possible while the ride is active. <strong>After the ride ends:</strong> the rider can write to the driver for up to 24 hours (for example about an item left in the car). The driver cannot start a conversation after the ride — only reply to a rider who wrote, within the same 24 hours. After that the conversation is read-only; for anything else, contact Joey support.</p></li>
+<li><p><strong>Reading the conversation:</strong> a rider sees the conversations of their rides with no time limit; for a driver, a ride's conversation is shown for 90 days after it ends. Message content is also <strong>retained after account deletion</strong> — see Privacy Policy §7.4.</p></li>
 <li><p>The in-app SOS feature sends your location and a timestamp to Joey when activated. <strong>It is not a substitute for contacting emergency services (police, ambulance) directly, and Joey does not guarantee any particular response time.</strong> <code class="todo">[A lawyer should review this disclaimer specifically — safety-feature liability language needs to be legally sound, not just factually accurate.]</code></p></li>
 </ul>
 <h2>12. Account deletion</h2>
@@ -105,8 +105,7 @@
 <p><strong>When a deletion request cannot be made.</strong> The request will be refused while any of the following is true, and the app will show you which one is blocking it:</p>
 <ul>
 <li><p>you have an active ride (as rider or driver) — finish or cancel it first;</p></li>
-<li><p>you have an unpaid positive wallet balance;</p></li>
-<li><p>you have an open debt owed to the platform.</p></li>
+<li><p>(drivers) you have a month whose settlement is still open — money owed to you or by you that has not been settled yet. In that case, contact Joey support, who will close the settlement.</p></li>
 </ul>
 <p><strong>What is kept after deletion.</strong> Your ride and payment history is retained and detached from your name, phone and email — <strong>but the content itself is kept in full, including the pickup and drop-off addresses of your rides, the full text of your chat messages, and the rating comments you wrote.</strong> The precise list, and the reasons for it, are in Privacy Policy §7.4 — <strong>read it before submitting a deletion request.</strong> <code class="todo">[Expanded 10/09/2026: the previous wording (&quot;ride/payment history retained, linked to an anonymized account&quot;) was accurate but too general, and did not mention the eligibility conditions for deletion at all.]</code></p>
 <h2>13. Disclaimers and limitation of liability</h2>
