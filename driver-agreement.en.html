@@ -8,28 +8,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- WCAG 2.0 2.4.1 Bypass Blocks (Level A): the header repeats on every page,
-     so a keyboard user gets a way past it. Hidden until focused. -->
 <a class="skip" href="#main">Skip to main content</a>
 <header class="bar">
   <a class="brand" href="en.html">Joey</a>
   <nav>
     <a href="en.html">Home</a>
     <a href="accessibility.en.html">Accessibility statement</a>
-    <!-- 3.1.2 Language of Parts (AA): this link's own text is in the other
-         language, so it is marked as such rather than inheriting the page's. -->
     <a href="driver-agreement.html" lang="he" dir="rtl" hreflang="he">עברית</a>
   </nav>
 </header>
 
-<!-- tabindex="-1" so the skip link actually moves focus, not just the
-     viewport: without it some browsers scroll and leave focus behind. -->
 <main id="main" tabindex="-1">
-  <div class="draft" role="note">
-    <strong>Draft — not yet reviewed by a lawyer</strong>
-    <p>This document is based on what the app actually does, but it has <strong>not been reviewed by a lawyer and is not binding</strong>. Any text shown <code class="todo">[in square brackets]</code> is a legal or business decision that has not been made yet.</p>
-  </div>
-
   <article>
 <h1>Joey — Driver Agreement</h1>
 <blockquote><p><strong>Wording pending legal approval.</strong> This is a placeholder, not an agreement. The Driver Agreement is being written by the company's lawyer and will be published on this page before the service launches. Until then, nothing on this page is a binding agreement.</p></blockquote>

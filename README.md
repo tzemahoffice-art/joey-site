@@ -24,12 +24,11 @@ so the site changed", which is why it is easy to remember.
 
 ## Status of these documents
 
-They are **drafts that have not been reviewed by a lawyer** and are not binding.
-Anything in `[square brackets]` is a legal or business decision that has not been
-made yet. Every page carries a banner saying so.
+They are published as Joey's current documents (STATUS.md §334). The lawyer's review
+is still open; open questions live in joey-app (legal/QUESTIONS-LAWYER-ACCOUNTANT.html,
+legal/PENDING-LAWYER.md), never on the site -- a check blocks any internal note here.
 
-`noindex` is set on every page on purpose, so drafts do not reach search engines.
-Remove it after legal review.
+`noindex` is still set on every page -- remove it only when Orel decides.
 
 ## Setup
 
