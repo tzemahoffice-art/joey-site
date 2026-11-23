@@ -55,8 +55,23 @@
 <li><p>Your ID number, and the identity and vehicle documents you upload during onboarding (ID card photo and a face photo for verification, driving licence, vehicle licence, insurance, vehicle photo) — stored in a private file storage bucket, never publicly accessible; only accessed through short-lived, individually-generated links</p></li>
 <li><p>Your live location while you are online in the app or on an active ride (see §3, &quot;Location,&quot; below for exactly how this works today)</p></li>
 <li><p>The amounts accrued in your favour and your monthly settlement statements</p></li>
+<li><p>Payment and settlement details — listed in section 2.3a below</p></li>
 <li><p>Your driving/service rating</p></li>
 </ul>
+<h3>2.3a If you're a driver — payment and settlement details</h3>
+<p>We collect these details to pay you each month, to issue the invoices and receipts, and to withhold tax at source as the law requires. For each item: who sees it, whether it is encrypted, and how long it is kept. &quot;The Joey team&quot; here means everyone who works in Joey's management system; &quot;the company's owner&quot; means the owner only.</p>
+<ul>
+<li><p><strong>Bank account details — bank, branch and account number.</strong> Who sees them: in the app you see only the last 4 digits; in the Joey team — only the company's owner. <strong>Encrypted:</strong> stored encrypted, and the encryption key is not in the database. How long: as long as your account exists; deleted when your account is deleted.</p></li>
+<li><p><strong>The account holder's name.</strong> Used to make sure the payment goes to an account in your name. Who sees it: you and the company's owner. Not encrypted. Deleted when your account is deleted.</p></li>
+<li><p><strong>A withholding-tax exemption or reduction certificate that you upload</strong> (the photo and its expiry date). Who sees it: you and the company's owner. Not encrypted; kept in private storage. Deleted when your account is deleted.</p></li>
+<li><p><strong>Your withholding-tax rate and its validity</strong>, as the company's owner checks and records it with the Tax Authority. Who sees it: you and the Joey team; only the company's owner records it. Not encrypted. Kept after your account is deleted.</p></li>
+<li><p><strong>Business (VAT dealer) number.</strong> Who sees it: you and the Joey team. Not encrypted. Kept after your account is deleted.</p></li>
+<li><p><strong>VAT status</strong> (licensed dealer or exempt dealer). Who sees it: you and the Joey team. Not encrypted. Kept after your account is deleted.</p></li>
+<li><p><strong>Invoice address and e-mail.</strong> Who sees them: you and the Joey team. Not encrypted. Deleted when your account is deleted.</p></li>
+<li><p><strong>Business certificate and bank-account confirmation</strong> (the photos you upload). Who sees them: you; the management system shows the Joey team only whether they were uploaded. Not encrypted; kept in private storage. Deleted when your account is deleted.</p></li>
+<li><p><strong>The records of payments to you</strong> — the transfers, the gross amount, the tax withheld at source and the rate it was withheld at, the monthly statements, and the receipts and invoices you send to Joey. Who sees them: you see your monthly statement; the Joey team sees all of them. Not encrypted. Kept for <strong>at least 7 years from the end of the tax year</strong>, also after your account is deleted, and they cannot be deleted before then.</p></li>
+</ul>
+<p>No rider sees any of these details (see §5).</p>
 <h3>2.4 Payment information — what we do <strong>not</strong> store</h3>
 <p>When you add a payment card, card entry happens on <strong>PayPlus's own secure payment page</strong> — not inside the Joey app, and not on Joey's servers. <strong>Joey never receives, sees, or stores your full card number or CVV.</strong> What we do store, after PayPlus confirms your card is added, is:</p>
 <ul>
@@ -159,7 +174,7 @@
 <li><p>Your saved payment card details, emergency contacts, and push-notification token — deleted outright.</p></li>
 <li><p>The last device location we held for you.</p></li>
 <li><p><strong>All your support conversations with the Joey team</strong> — your messages and the team's. <strong>Unlike ride chat</strong> (item 4 below), support conversations are not kept (see §2.8).</p></li>
-<li><p><strong>If you are a driver:</strong> the photo of your ID card and the face photo used for verification are <strong>deleted already once your account is approved</strong>. <strong>Your ID number, driving licence, vehicle licence and insurance are kept for 7 years from your last ride, also after account deletion, to defend against claims</strong>, as evidence that we checked them, in a closed archive that only the company's owner can access. Your ID number is included in the daily database backup; the images of the documents themselves are not included in any backup today. The vehicle photo and your driving licence categories are deleted; your vehicle registration number and model are removed from your driver record.</p></li>
+<li><p><strong>If you are a driver:</strong> the photo of your ID card and the face photo used for verification are <strong>deleted already once your account is approved</strong>. <strong>Your ID number, driving licence, vehicle licence and insurance are kept for 7 years from your last ride, also after account deletion, to defend against claims</strong>, as evidence that we checked them, in a closed archive that only the company's owner can access. Your ID number is included in the daily database backup; the images of the documents themselves are not included in any backup today. The vehicle photo and your driving licence categories are deleted; your vehicle registration number and model are removed from your driver record. Of the payment and settlement details: the bank account details, the withholding-tax exemption certificate, the invoice address and e-mail, the business certificate and the bank-account confirmation are deleted; the business number, the VAT status and the withholding-tax rate are kept (see §2.3a).</p></li>
 </ul></li>
 </ol>
 <ol>
@@ -190,6 +205,7 @@
 <li><p><strong>A package photo taken by the courier:</strong> <strong>180 days</strong> after the delivery is completed or cancelled — then deleted automatically (see §2.7).</p></li>
 <li><p><strong>Support conversations with the Joey team:</strong> <strong>24 months from when the conversation was closed</strong> — and deleted outright when the account is deleted (see §2.8, §7).</p></li>
 <li><p><strong>Driver documents:</strong> the ID card photo and the face photo — until the account is approved; the ID number, driving licence, vehicle licence and insurance — <strong>7 years from the last ride, also after account deletion</strong>, to defend against claims. While the account is active, our operations team sees them to approve and renew, and you see your own; after account deletion — in a closed archive that only the company's owner can access (see §7).</p></li>
+<li><p><strong>Drivers' payment and settlement details:</strong> item by item — see §2.3a.</p></li>
 <li><p><strong>SOS alerts and safety-incident records:</strong> <strong>7 years</strong>, including after account deletion, so that we can investigate a safety incident or complaint.</p></li>
 <li><p><strong>An unpaid debt:</strong> holds the account deletion <strong>for at most 7 years</strong> from the ride (see §7).</p></li>
 </ul>
