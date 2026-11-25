@@ -157,7 +157,7 @@ h2 { font-size: clamp(1.9rem, 2.5vw + .8rem, 2.7rem); letter-spacing: -.03em; li
 .band-body { color: var(--muted); font-size: 1.1rem; line-height: 1.65; margin: 0 0 1.6rem; max-width: 34rem; }
 .band-cta { grid-template-columns: 1fr auto; }
 .band-cta .band-body { margin-bottom: 0; }
-.push { display: block; width: 100%; max-width: 30rem; border-radius: 1.6rem; box-shadow: 0 30px 70px rgba(0, 0, 0, .55), 0 0 0 1.5px rgba(142, 190, 255, .3); justify-self: center; }
+.push { display: block; width: 100%; height: auto; max-width: 30rem; border-radius: 1.6rem; box-shadow: 0 30px 70px rgba(0, 0, 0, .55), 0 0 0 1.5px rgba(142, 190, 255, .3); justify-self: center; }
 .push-wrap { display: flex; justify-content: center; }
 .push-hero { transform: rotate(-2deg); }
 .note { display: flex; gap: .6rem; align-items: center; margin: 1.6rem 0 0; color: var(--muted); }
