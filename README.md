@@ -28,7 +28,7 @@ They are published as Joey's current documents (STATUS.md §334). The lawyer's r
 is still open; open questions live in joey-app (legal/QUESTIONS-LAWYER-ACCOUNTANT.html,
 legal/PENDING-LAWYER.md), never on the site -- a check blocks any internal note here.
 
-`noindex` is still set on every page -- remove it only when Orel decides.
+Search engines may index the pages: `noindex` was removed by Orel's decision (26/11/2026).
 
 ## Setup
 
