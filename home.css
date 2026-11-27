@@ -171,7 +171,12 @@ h2 { font-size: clamp(1.9rem, 2.5vw + .8rem, 2.7rem); letter-spacing: -.03em; li
 .footer-contact { margin: 0; color: var(--text); }
 .footer-contact .label { color: var(--muted); margin-inline-end: .4rem; }
 .site-footer a { color: var(--blue-3); }
-.footer-docs { margin: 1.2rem 0 0; }
+.footer-docs { margin: 1.2rem 0 0; display: flex; flex-wrap: wrap; align-items: center; row-gap: .25rem; }
+/* 386 (Orel 27/11/2026): on a phone the document links were ~21px tall with ~11px beside and ~3px
+   between rows -- below WCAG 2.5.8's 24px, and TalkBack's frame could land on the neighbour.
+   Each link is now a 40px-tall target with room on both sides; the text and colours do not change. */
+.footer-docs a { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 .35rem; }
+.footer-docs span[aria-hidden] { padding: 0 .1rem; }
 .footer-legal { margin: 1rem 0 0; font-size: .8rem; color: #9AA3B5; }
 
 /* ---------- smaller screens ---------- */

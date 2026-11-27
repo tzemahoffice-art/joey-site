@@ -195,6 +195,11 @@ footer {
   font-size: 0.9rem;
 }
 footer p { margin: 0.4rem 0; }
+/* Orel 27/11/2026: the four document links, as on the home page -- each a 40px-tall target
+   with room on both sides (WCAG 2.5.8; TalkBack's frame lands on the link that was touched). */
+footer .footer-docs { display: flex; flex-wrap: wrap; align-items: center; row-gap: .25rem; }
+footer .footer-docs a { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 .35rem; }
+footer .footer-docs span[aria-hidden] { padding: 0 .1rem; }
 
 /* ---------- bilingual blocks ----------
    §85: every bilingual block is two SIBLING blocks, one per language, each
